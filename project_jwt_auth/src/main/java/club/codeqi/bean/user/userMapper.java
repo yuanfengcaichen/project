@@ -11,8 +11,8 @@ public interface userMapper {
     public int insert(user user);
     public int update(user user);
     public ArrayList<user> selectAll();
-    public user selectByid(Integer id);
-    public int delete(int id);
+    public user selectByid(Integer uid);
+    public int delete(int uid);
 
     public user findByName(String name);
 }

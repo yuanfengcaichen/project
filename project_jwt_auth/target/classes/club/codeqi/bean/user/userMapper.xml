@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="club.codeqi.bean.user.userMapper">
     <!-- 增【G】 -->
-    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="uid">
 		insert into
 		user (username,password,role_id,create_time,is_lock)
 		values (#{username},#{password},#{role_id},#{create_time},#{is_lock})
@@ -10,7 +10,7 @@
 
     <!-- 删 -->
     <delete id="delete">
-		delete from user where id = #{id}
+		delete from user where uid = #{uid}
 	</delete>
 
     <!-- 改【G】 -->
@@ -21,7 +21,7 @@
 		role_id = #{role_id},
 		create_time = #{create_time},
 		is_lock = #{is_lock},
-		where id = #{id}
+		where uid = #{uid}
 	</update>
 
 
@@ -32,24 +32,21 @@
     <resultMap id="model" autoMapping="true" type="club.codeqi.bean.user.user"></resultMap>
 
 	<!-- 通用映射：手动模式 -->
-<!--	<resultMap id="user_Map" type="club.codeqi.bean.user.user">-->
-<!--		<id property="Sid" column="Sid"></id>-->
-<!--		<result property="SName" column="SName"></result>-->
-<!--		<result property="Address" column="Address"></result>-->
-<!--		<result property="Synopsis" column="Synopsis"></result>-->
-<!--		<result property="Opentime" column="Opentime"></result>-->
-<!--		<result property="Theme" column="Theme"></result>-->
-<!--		<result property="Grade" column="Grade"></result>-->
-<!--		<result property="Passed" column="Passed"></result>-->
-<!--		<result property="Introduce" column="Introduce"></result>-->
-<!--		<result property="Uid" column="Uid"></result>-->
-<!--		<collection property="scenicPhotos" ofType="club.codeqi.travel.bean.ScenicPhoto" column="Sid">-->
-<!--			<id property="Sphid" column="Sphid"></id>-->
-<!--			<result property="SphName" column="SphName"></result>-->
-<!--			<result property="Sid" column="Sid"></result>-->
-<!--			<result property="Scoid" column="Scoid"></result>-->
-<!--		</collection>-->
-<!--	</resultMap>-->
+	<resultMap id="user_Map" type="club.codeqi.bean.user.user">
+		<id property="uid" column="uid"></id>
+		<result property="username" column="username"></result>
+		<result property="password" column="password"></result>
+		<result property="role_id" column="role_id"></result>
+		<result property="create_time" column="create_time"></result>
+		<result property="is_lock" column="is_lock"></result>
+		<collection property="permissions" ofType="club.codeqi.bean.permission.permission" column="id">
+			<id property="perid" column="perid"></id>
+			<result property="role_id" column="role_id"></result>
+			<result property="permission_code" column="permission_code"></result>
+			<result property="create_time" column="create_time"></result>
+			<result property="permission_info" column="permission_info"></result>
+		</collection>
+	</resultMap>
 
     <!-- 公共查询sql片段 -->
     <sql id="select_sql">
@@ -57,23 +54,23 @@
 			u.*, p.*
 		FROM
 			USER u
-		LEFT JOIN role_permission p ON u.role_id = p.role_id
+		LEFT JOIN permission p ON u.role_id = p.role_id
 	</sql>
 
 
     <!-- 查 -->
-    <select id="selectByid" resultMap="model">
+    <select id="selectByid" resultMap="user_Map">
         <include refid="select_sql"></include>
-        where id = #{id}
+        where u.uid = #{uid}
     </select>
 
     <!-- 查询，根据条件(参数为null或0时默认忽略此条件)【G】 -->
-    <select id="selectAll" resultMap="model">
+    <select id="selectAll" resultMap="user_Map">
         <include refid="select_sql"></include>
     </select>
 
 	<!-- 查询，根据用户名【G】 -->
-	<select id="findByName" resultMap="model">
+	<select id="findByName" resultMap="user_Map">
 		<include refid="select_sql"></include>
 		<where>
 			username = #{name}

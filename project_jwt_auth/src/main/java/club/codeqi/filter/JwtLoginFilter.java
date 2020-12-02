@@ -36,8 +36,9 @@ public class JwtLoginFilter extends UsernamePasswordAuthenticationFilter {
         try {
             user user =  new ObjectMapper().readValue(request.getInputStream(), user.class);
             UsernamePasswordAuthenticationToken authRequest = new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword());
-            return authenticationManager.authenticate(authRequest);
-        } catch (IOException e) {
+            Authentication authenticate = authenticationManager.authenticate(authRequest);
+            return authenticate;
+        } catch (Exception e) {
             try {
                 response.setContentType("application/json;charset=utf-8");
                 response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
@@ -56,10 +57,16 @@ public class JwtLoginFilter extends UsernamePasswordAuthenticationFilter {
     }
 
     @Override
-    protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authResult) throws IOException, ServletException {
+    public void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authResult) throws IOException, ServletException {
         user user = new user();
         user.setUsername(authResult.getName());
-        user.setPermission((ArrayList) authResult.getAuthorities());
+        user.setPassword("");
+        user.setPermissions((List) authResult.getAuthorities());
+        user auuser = (club.codeqi.bean.user.user) authResult.getPrincipal();
+        user.setUid(auuser.getUid());
+        user.setIs_lock(auuser.getIs_lock());
+        user.setRole_id(auuser.getRole_id());
+        user.setCreate_time(auuser.getCreate_time());
         String token = JwtUtils.generateTokenExpireInMinutes(user,prop.getPrivateKey(),60*24);
         response.addHeader("Authorization","Bearer "+token);
         try {

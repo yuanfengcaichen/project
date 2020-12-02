@@ -3,18 +3,18 @@ package club.codeqi.bean.role;
 import java.util.Date;
 
 public class role {
-    private Integer id;
+    private Integer rid;
     private String role_name;
     private String role_info;
     private Integer is_lock;
     private Date create_time;
 
-    public Integer getId() {
-        return id;
+    public Integer getRid() {
+        return rid;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setRid(Integer rid) {
+        this.rid = rid;
     }
 
     public String getRole_name() {

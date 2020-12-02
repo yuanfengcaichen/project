@@ -1,20 +1,23 @@
 package club.codeqi.bean.permission;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.security.core.GrantedAuthority;
+
 import java.util.Date;
 
-public class permission {
-    private Integer id;
+public class permission implements GrantedAuthority {
+    private Integer perid;
     private Integer role_id;
     private String permission_code;
     private Date create_time;
     private String permission_info;
 
-    public Integer getId() {
-        return id;
+    public Integer getPerid() {
+        return perid;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setPerid(Integer perid) {
+        this.perid = perid;
     }
 
     public Integer getRole_id() {
@@ -47,5 +50,22 @@ public class permission {
 
     public void setPermission_info(String permission_info) {
         this.permission_info = permission_info;
+    }
+
+    @Override
+    public String toString() {
+        return "permission{" +
+                "perid=" + perid +
+                ", role_id=" + role_id +
+                ", permission_code='" + permission_code + '\'' +
+                ", create_time=" + create_time +
+                ", permission_info='" + permission_info + '\'' +
+                '}';
+    }
+
+    @JsonIgnore
+    @Override
+    public String getAuthority() {
+        return permission_code;
     }
 }

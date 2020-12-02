@@ -1,50 +1,60 @@
 package club.codeqi.bean.user;
 
 
+import club.codeqi.bean.permission.permission;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 public class user implements UserDetails {
-    private Integer id;
+    private Integer uid;
     private String username;
     private String password;
     private Integer role_id;
     private Integer is_lock;
     private Date create_time;
 
-    private ArrayList permission;
+    private List<permission> permissions;
 
-    public Integer getId() {
-        return id;
+    private static BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+
+    public Integer getUid() {
+        return uid;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setUid(Integer uid) {
+        this.uid = uid;
     }
 
     public String getUsername() {
         return username;
     }
 
+    @JsonIgnore
     @Override
     public boolean isAccountNonExpired() {
         return true;
     }
 
+    @JsonIgnore
     @Override
     public boolean isAccountNonLocked() {
         return true;
     }
 
+    @JsonIgnore
     @Override
     public boolean isCredentialsNonExpired() {
         return true;
     }
 
+    @JsonIgnore
     @Override
     public boolean isEnabled() {
         return true;
@@ -54,9 +64,10 @@ public class user implements UserDetails {
         this.username = username;
     }
 
+    @JsonIgnore
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return permission;
+        return permissions;
     }
 
     public String getPassword() {
@@ -64,8 +75,9 @@ public class user implements UserDetails {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = password;//bCryptPasswordEncoder.encode(password);
     }
+
 
     public Integer getRole_id() {
         return role_id;
@@ -91,24 +103,24 @@ public class user implements UserDetails {
         this.create_time = create_time;
     }
 
-    public ArrayList getPermission() {
-        return permission;
+    public List<permission> getPermissions() {
+        return permissions;
     }
 
-    public void setPermission(ArrayList permission) {
-        this.permission = permission;
+    public void setPermissions(List permissions) {
+        this.permissions = permissions;
     }
 
     @Override
     public String toString() {
         return "user{" +
-                "id=" + id +
+                "uid=" + uid +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", role_id=" + role_id +
                 ", is_lock=" + is_lock +
                 ", create_time=" + create_time +
-                ", permission=" + permission +
+                ", permissions=" + permissions +
                 '}';
     }
 }

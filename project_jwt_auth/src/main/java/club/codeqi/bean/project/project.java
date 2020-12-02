@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Data
 public class project {
-    private Integer id;
+    private Integer pid;
     private String p_name;
     private Integer creat_uid;
     private String remarks;

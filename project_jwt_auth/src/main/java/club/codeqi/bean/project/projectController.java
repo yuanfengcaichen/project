@@ -3,6 +3,7 @@ package club.codeqi.bean.project;
 import org.apache.ibatis.annotations.Delete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -43,7 +44,7 @@ public class projectController {
         return projectMapper.selectByid(pid);
     }
 
-    @Secured("project")
+    @PreAuthorize("hasAuthority('project')")
     @GetMapping("/project")
     public ArrayList projectAll(){
         return projectMapper.selectAll();

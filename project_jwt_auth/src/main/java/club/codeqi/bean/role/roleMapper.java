@@ -9,6 +9,6 @@ public interface roleMapper {
     public int insert(role role);
     public int update(role role);
     public ArrayList<role> selectAll();
-    public role selectByid(Integer id);
-    public int delete(int id);
+    public role selectByid(Integer rid);
+    public int delete(int rid);
 }

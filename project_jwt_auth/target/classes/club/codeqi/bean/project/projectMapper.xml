@@ -3,7 +3,7 @@
 <mapper namespace="club.codeqi.bean.project.projectMapper">
 
 	<!-- 增【G】 -->
-	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
+	<insert id="insert" useGeneratedKeys="true" keyProperty="pid">
 		insert into 
 		project (p_name,creat_uid,remarks,create_time,state,begin_time,end_time)
 		values (#{p_name},#{creat_uid},#{remarks},#{create_time},#{state},#{begin_time},#{end_time})
@@ -11,7 +11,7 @@
 
 	<!-- 删 -->
 	<delete id="delete">
-		delete from project where id = #{id}
+		delete from project where pid = #{pid}
 	</delete>
 	
 	<!-- 改【G】 -->
@@ -24,7 +24,7 @@
 		state = #{state},
 		begin_time = #{begin_time},
 		end_time = #{end_time}
-		where id = #{id}
+		where pid = #{pid}
 	</update>
 	
 	
@@ -68,7 +68,7 @@
 	<!-- 查 -->
 	<select id="selectByid" resultMap="model">
 		<include refid="select_sql"></include>
-		where id = #{id}
+		where pid = #{pid}
 	</select>
 	
 	<!-- 查询，根据条件(参数为null或0时默认忽略此条件)【G】 -->

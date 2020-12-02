@@ -1,7 +1,9 @@
 package club.codeqi.filter;
 
+import club.codeqi.bean.permission.permission;
 import club.codeqi.bean.user.user;
 import club.codeqi.config.RsaKeyProperties;
+import club.codeqi.utils.JsonUtils;
 import club.codeqi.utils.JwtUtils;
 import club.codeqi.domain.Payload;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,8 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class JwtVerfyFilter extends BasicAuthenticationFilter {
 
@@ -45,13 +46,29 @@ public class JwtVerfyFilter extends BasicAuthenticationFilter {
         }
         else{
             //如果携带正确格式的token
-            String token = header.replace("Bearer ","");
-            Payload<user> payload = JwtUtils.getInfoFromToken(token,prop.getPublicKey(), user.class);
-            user user = payload.getUserInfo();
-            if(user!=null){
-                UsernamePasswordAuthenticationToken authResult = new UsernamePasswordAuthenticationToken(user.getUsername(), null, user.getPermission());
-                SecurityContextHolder.getContext().setAuthentication(authResult);
-                chain.doFilter(request, response);
+            try{
+                String token = header.replace("Bearer ","");
+                Payload<user> payload = JwtUtils.getInfoFromToken(token,prop.getPublicKey(), user.class);
+                user user = payload.getUserInfo();
+                //user.getPermissions();//1. 转为json，2. JsonUtil.tolist(json,permission.class)
+                user.setPermissions(JsonUtils.toList(JsonUtils.toString(user.getPermissions()),permission.class));
+                //System.out.println(user.getAuthorities());
+                if(user!=null){
+                    UsernamePasswordAuthenticationToken authResult = new UsernamePasswordAuthenticationToken(user.getUsername(), null, user.getPermissions());
+                    SecurityContextHolder.getContext().setAuthentication(authResult);
+                    chain.doFilter(request, response);
+                }
+            }
+            catch (Exception e){
+                response.setContentType("application/json;charset=utf-8");
+                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+                PrintWriter out = response.getWriter();
+                Map resultMap = new HashMap();
+                resultMap.put("code",HttpServletResponse.SC_UNAUTHORIZED);
+                resultMap.put("msg","token过期，请重新登录！");
+                out.write(new ObjectMapper().writeValueAsString(resultMap));
+                out.flush();
+                out.close();
             }
         }
     }

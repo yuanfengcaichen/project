@@ -2,25 +2,25 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="club.codeqi.bean.permission.permissionMapper">
     <!-- 增【G】 -->
-    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="perid">
 		insert into
-		role_permission (role_id,permission_code,create_time,permission_info)
+		permission (role_id,permission_code,create_time,permission_info)
 		values (#{role_id},#{permission_code},#{create_time},#{permission_info})
 	</insert>
 
     <!-- 删 -->
     <delete id="delete">
-		delete from role_permission where id = #{id}
+		delete from permission where perid = #{perid}
 	</delete>
 
     <!-- 改【G】 -->
     <update id="update">
-		update role_permission set
+		update permission set
 		role_id = #{role_id},
 		permission_code = #{permission_code},
 		create_time = #{create_time},
 		permission_info = #{permission_info},
-		where id = #{id}
+		where perid = #{perid}
 	</update>
 
 
@@ -57,14 +57,14 @@
     <!-- 公共查询sql片段 -->
     <sql id="select_sql">
 		select *
-		from role_permission
+		from permission
 	</sql>
 
 
     <!-- 查 -->
     <select id="selectByid" resultMap="model">
         <include refid="select_sql"></include>
-        where id = #{id}
+        where perid = #{perid}
     </select>
 
     <!-- 查询，根据条件(参数为null或0时默认忽略此条件)【G】 -->

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="club.codeqi.bean.role.roleMapper">
     <!-- 增【G】 -->
-    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="rid">
 		insert into
 		role (role_name,role_info,create_time,is_lock)
 		values (#{role_name},#{role_info},#{create_time},#{is_lock})
@@ -10,7 +10,7 @@
 
     <!-- 删 -->
     <delete id="delete">
-		delete from role where id = #{id}
+		delete from role where rid = #{rid}
 	</delete>
 
     <!-- 改【G】 -->
@@ -20,7 +20,7 @@
 		role_info = #{role_info},
 		create_time = #{create_time},
 		is_lock = #{is_lock},
-		where id = #{id}
+		where rid = #{rid}
 	</update>
 
 
@@ -64,7 +64,7 @@
     <!-- 查 -->
     <select id="selectByid" resultMap="model">
         <include refid="select_sql"></include>
-        where id = #{id}
+        where rid = #{rid}
     </select>
 
     <!-- 查询，根据条件(参数为null或0时默认忽略此条件)【G】 -->

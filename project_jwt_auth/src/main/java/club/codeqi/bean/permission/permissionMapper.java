@@ -9,6 +9,6 @@ public interface permissionMapper {
     public int insert(permission permission);
     public int update(permission permission);
     public ArrayList<permission> selectAll();
-    public permission selectByid(Integer id);
-    public int delete(int id);
+    public permission selectByid(Integer perid);
+    public int delete(int perid);
 }
