@@ -1,0 +1,17 @@
+server:
+  port: 9001
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://pipigo.club:3306/product?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: 1qaz
+logging:
+  level:
+    club.codeqi: debug
+
+
+rsa:
+  key:
+    pubKeyFile: E:\ImportantPlan\项目管理\project\gengerateKey\id_key_rsa.pub
+    priKeyFile: E:\ImportantPlan\项目管理\project\gengerateKey\id_key_rsa
