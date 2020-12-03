@@ -19,7 +19,7 @@ class userMapperTest {
     @Test
     void insert() {
         user user = new user();
-        user.setUsername("test02");
+        user.setUsername("test04");
         user.setPassword(bCryptPasswordEncoder.encode("123"));
         user.setRole_id(1);
         user.setCreate_time(new Date());

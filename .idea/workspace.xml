@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e4a6d16-dc94-4050-95b3-875c8552ffd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/file/file.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/file/fileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/file/fileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/file/fileMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/member/member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/member/memberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/member/memberMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/member/memberMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/stage/stage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/stage/stageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/stage/stageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/stage/stageMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/task/task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/task/taskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/task/taskMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/task/taskMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/test/java/club/codeqi/bean/user/userMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/test/java/club/codeqi/bean/user/userMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/filter/JwtVerfyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/filter/JwtVerfyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/test-classes/club/codeqi/bean/user/userMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/test-classes/club/codeqi/bean/user/userMapperTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +45,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -90,7 +109,7 @@
       <recent name="E:\ImportantPlan\项目管理\project\project_common\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.userMapperTest.insert">
+  <component name="RunManager" selected="Spring Boot.project_jwt_authApplication">
     <configuration name="projectControllerTest.deleteProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project_jwt_auth" />
       <extension name="coverage">
@@ -183,7 +202,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1926e64a-bfa3-4917-9943-6b12dc78fd74" name="Default Changelist" comment="" />
+      <changelist id="6e4a6d16-dc94-4050-95b3-875c8552ffd2" name="Default Changelist" comment="" />
       <created>1606724420394</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -191,6 +210,7 @@
       <workItem from="1606724424812" duration="970000" />
       <workItem from="1606725549905" duration="29828000" />
       <workItem from="1606901690824" duration="17353000" />
+      <workItem from="1606973295541" duration="6893000" />
     </task>
     <servers />
   </component>
@@ -215,45 +235,53 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="279" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606869585766" />
-    <state width="1877" height="399" key="GridCell.Tab.0.bottom" timestamp="1606920956003">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1606983121111">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606899362039" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606983121111" />
     <state width="1877" height="399" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606920956003" />
-    <state width="1877" height="399" key="GridCell.Tab.0.center" timestamp="1606920956002">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1606983121111">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606899362036" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606983121111" />
     <state width="1877" height="399" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606920956002" />
-    <state width="1877" height="399" key="GridCell.Tab.0.left" timestamp="1606920956002">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1606983121110">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606899362034" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606983121110" />
     <state width="1877" height="399" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606920956002" />
-    <state width="1877" height="399" key="GridCell.Tab.0.right" timestamp="1606920956002">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1606983121111">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606899362038" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606983121111" />
     <state width="1877" height="399" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606920956002" />
-    <state width="1877" height="399" key="GridCell.Tab.1.bottom" timestamp="1606920956003">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1606983121112">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606898371638" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606983121112" />
     <state width="1877" height="399" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606920956003" />
-    <state width="1877" height="399" key="GridCell.Tab.1.center" timestamp="1606920956003">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1606983121112">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606898371637" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606983121112" />
     <state width="1877" height="399" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606920956003" />
-    <state width="1877" height="399" key="GridCell.Tab.1.left" timestamp="1606920956003">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1606983121111">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606898371637" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606983121111" />
     <state width="1877" height="399" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606920956003" />
-    <state width="1877" height="399" key="GridCell.Tab.1.right" timestamp="1606920956003">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1606983121112">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606898371637" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606983121112" />
     <state width="1877" height="399" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606920956003" />
     <state x="2381" y="162" key="SettingsEditor" timestamp="1606725396168">
       <screen x="1920" y="0" width="1920" height="1040" />
