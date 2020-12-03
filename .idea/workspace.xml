@@ -1,46 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1926e64a-bfa3-4917-9943-6b12dc78fd74" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_common/project_common.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/project_jwt_auth.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/permission/permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/permission/permission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/permission/permissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/permission/permissionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/permission/permissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/permission/permissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/project/project.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/project/project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/project/projectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/project/projectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/project/projectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/project/projectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/project/projectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/project/projectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/role/role.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/role/role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/role/roleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/role/roleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/role/roleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/role/roleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/user/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/user/user.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/user/userMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/user/userMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/user/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/user/userMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/filter/JwtLoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/filter/JwtLoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/filter/JwtVerfyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/filter/JwtVerfyFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/test/java/club/codeqi/bean/user/userMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/test/java/club/codeqi/bean/user/userMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/META-INF/project_jwt_auth.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/permission/permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/permission/permission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/permission/permissionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/permission/permissionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/permission/permissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/permission/permissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/project/project.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/project/project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/project/projectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/project/projectController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/project/projectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/project/projectMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/project/projectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/project/projectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/role/role.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/role/role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/role/roleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/role/roleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/role/roleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/role/roleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/user/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/user/user.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/user/userMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/user/userMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/user/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/user/userMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/filter/JwtLoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/filter/JwtLoginFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/filter/JwtVerfyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/filter/JwtVerfyFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/test-classes/club/codeqi/bean/user/userMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/test-classes/club/codeqi/bean/user/userMapperTest.class" afterDir="false" />
+    <list default="true" id="6e4a6d16-dc94-4050-95b3-875c8552ffd2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
