@@ -19,7 +19,7 @@
 		role_id = #{role_id},
 		permission_code = #{permission_code},
 		create_time = #{create_time},
-		permission_info = #{permission_info},
+		permission_info = #{permission_info}
 		where perid = #{perid}
 	</update>
 

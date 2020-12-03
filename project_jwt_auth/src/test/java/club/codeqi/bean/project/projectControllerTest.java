@@ -41,7 +41,7 @@ class projectControllerTest {
     @Test
     void updateProject() {
         HashMap map = new HashMap();
-        map.put("pid",1);
+        map.put("pid",3);
         map.put("p_name","测试update");
         System.out.println(projectController.updateProject(map));
     }

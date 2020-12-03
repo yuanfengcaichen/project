@@ -29,10 +29,15 @@ class userMapperTest {
 
     @Test
     void update() {
+        user user = userMapper.selectByid(2);
+        System.out.println(user);
+        user.setRole_id(1);
+        System.out.println(userMapper.update(user));
     }
 
     @Test
     void selectAll() {
+        System.out.println(userMapper.selectAll());
     }
 
     @Test
@@ -42,6 +47,7 @@ class userMapperTest {
 
     @Test
     void delete() {
+        System.out.println(userMapper.delete(6));
     }
 
     @Test

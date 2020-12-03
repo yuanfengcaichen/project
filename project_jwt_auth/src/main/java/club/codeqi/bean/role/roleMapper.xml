@@ -19,7 +19,7 @@
 		role_name = #{role_name},
 		role_info = #{role_info},
 		create_time = #{create_time},
-		is_lock = #{is_lock},
+		is_lock = #{is_lock}
 		where rid = #{rid}
 	</update>
 

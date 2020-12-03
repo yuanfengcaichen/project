@@ -20,7 +20,7 @@
 		password = #{password},
 		role_id = #{role_id},
 		create_time = #{create_time},
-		is_lock = #{is_lock},
+		is_lock = #{is_lock}
 		where uid = #{uid}
 	</update>
 
