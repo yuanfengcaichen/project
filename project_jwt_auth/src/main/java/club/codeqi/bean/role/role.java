@@ -48,4 +48,15 @@ public class role {
     public void setCreate_time(Date create_time) {
         this.create_time = create_time;
     }
+
+    @Override
+    public String toString() {
+        return "role{" +
+                "rid=" + rid +
+                ", role_name='" + role_name + '\'' +
+                ", role_info='" + role_info + '\'' +
+                ", is_lock=" + is_lock +
+                ", create_time=" + create_time +
+                '}';
+    }
 }

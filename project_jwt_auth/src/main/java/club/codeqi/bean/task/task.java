@@ -17,5 +17,4 @@ public class task {
     private Date begin_time;
     private Date end_time;
 
-    private String s = "tid,p_id,s_id,task_name,remarks,create_time,state,begin_time,end_time";
 }
