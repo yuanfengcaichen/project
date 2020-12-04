@@ -16,6 +16,5 @@ public class file {
     private String filepath;
     private Date create_time;
 
-    private String s = "fid,p_id,s_id,t_id,m_id,oldname,filepath,create_time";
 
 }

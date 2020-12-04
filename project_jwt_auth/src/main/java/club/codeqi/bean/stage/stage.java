@@ -16,5 +16,4 @@ public class stage {
     private Date begin_time;
     private Date end_time;
 
-    private String s = "sid,p_id,remarks,create_time,state,stage_name,begin_time,end_time";
 }

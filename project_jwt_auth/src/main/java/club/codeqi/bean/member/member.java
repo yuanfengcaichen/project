@@ -19,6 +19,5 @@ public class member {
     private Date begin_time;
     private Date end_time;
 
-    private String s = "mid,p_id,s_id,t_id,u_id,remarks,content,create_time,state,begin_time,end_time";
 
 }
