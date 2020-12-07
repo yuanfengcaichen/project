@@ -1,10 +1,12 @@
 package club.codeqi.bean.role;
 
+import club.codeqi.bean.user.user;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -45,5 +47,12 @@ class roleMapperTest {
     @Test
     void delete() {
         System.out.println(roleMapper.delete(3));
+    }
+
+    @Test
+    void testfind(){
+        System.out.println(("----- selectAll method test ------"));
+        List<role> roleList = roleMapper.selectList(null);
+        roleList.forEach(System.out::println);
     }
 }

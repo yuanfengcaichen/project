@@ -1,5 +1,8 @@
 package club.codeqi.bean.project;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.apache.ibatis.annotations.Delete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
@@ -8,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -44,9 +48,16 @@ public class projectController {
         return projectMapper.selectByid(pid);
     }
 
-    @PreAuthorize("hasAuthority('project')")
+    //@PreAuthorize("hasAuthority('project')")
     @GetMapping("/project")
-    public ArrayList projectAll(){
-        return projectMapper.selectAll();
+    public List projectAll(){
+//        PageHelper.startPage(page.getPage(), page.getRows());
+//        List<project> list = projectMapper.selectAll();
+//        PageInfo<project> pageInfo = new PageInfo<>(list);
+//        return pageInfo;
+        //return projectMapper.selectAll();
+        PageHelper.startPage(2, 10);
+        List<project> list = projectMapper.selectList(null);
+        return list;
     }
 }

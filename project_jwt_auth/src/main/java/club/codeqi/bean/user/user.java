@@ -2,7 +2,9 @@ package club.codeqi.bean.user;
 
 
 import club.codeqi.bean.permission.permission;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -20,6 +22,7 @@ public class user implements UserDetails {
     private Integer is_lock;
     private Date create_time;
 
+    @TableField(exist = false)
     private List<permission> permissions;
 
     private static BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();

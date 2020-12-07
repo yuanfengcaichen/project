@@ -6,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -53,5 +54,12 @@ class userMapperTest {
     @Test
     void findByName() {
         System.out.println(userMapper.findByName("testuser"));
+    }
+
+    @Test
+    void testfind(){
+        System.out.println(("----- selectAll method test ------"));
+        List<user> userList = userMapper.selectList(null);
+        userList.forEach(System.out::println);
     }
 }

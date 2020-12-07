@@ -8,6 +8,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
@@ -17,18 +18,20 @@ class projectControllerTest {
 
     @Test
     void insertproject() throws ParseException {
-        project project = new project();
-        project.setP_name("");
-        project.setRemarks("");
-        project.setState(0);
-        project.setCreat_uid(0);
-        project.setCreate_time(new Date());
-        project.setBegin_time(new Date());
-        SimpleDateFormat sm =new SimpleDateFormat("yyy-MM-dd HH:mm:ss");
-        String end = "2021-01-10 12:00:00";
-        Date enddate = sm.parse(end);
-        project.setEnd_time(enddate);
-        System.out.println(projectController.insertproject(project));
+        for(int i=0;i<10;i++){
+            project project = new project();
+            project.setP_name("");
+            project.setRemarks("");
+            project.setState(0);
+            project.setCreat_uid(0);
+            project.setCreate_time(new Date());
+            project.setBegin_time(new Date());
+            SimpleDateFormat sm =new SimpleDateFormat("yyy-MM-dd HH:mm:ss");
+            String end = "2021-01-10 12:00:00";
+            Date enddate = sm.parse(end);
+            project.setEnd_time(enddate);
+            System.out.println(projectController.insertproject(project));
+        }
     }
 
     @Test
@@ -53,6 +56,10 @@ class projectControllerTest {
 
     @Test
     void projectAll() {
-        System.out.println(projectController.projectAll());
+        List list = projectController.projectAll();
+        System.out.println(list.size());
+        for(Object o: list){
+            System.out.println(o);
+        }
     }
 }
