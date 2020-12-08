@@ -58,6 +58,7 @@ public class projectController {
         //return projectMapper.selectAll();
         PageHelper.startPage(2, 10);
         List<project> list = projectMapper.selectList(null);
+        int count = projectMapper.selectCount(null);
         return list;
     }
 }
