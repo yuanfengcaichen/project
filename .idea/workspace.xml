@@ -5,7 +5,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_jwt_auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/project/projectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/bean/project/projectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/filter/JwtLoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/filter/JwtLoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/filter/JwtVerfyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/main/java/club/codeqi/filter/JwtVerfyFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_jwt_auth/src/test/java/club/codeqi/bean/project/projectControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/src/test/java/club/codeqi/bean/project/projectControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/project/projectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/bean/project/projectController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/filter/JwtLoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/filter/JwtLoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/filter/JwtVerfyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/classes/club/codeqi/filter/JwtVerfyFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_jwt_auth/target/test-classes/club/codeqi/bean/project/projectControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_jwt_auth/target/test-classes/club/codeqi/bean/project/projectControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +70,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="D:/sa/sa-plus-master/sp-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../毕设代码/travel" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -175,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.project_jwt_authApplication" />
         <item itemvalue="JUnit.projectControllerTest.projectAll" />
         <item itemvalue="JUnit.projectControllerTest.insertproject" />
         <item itemvalue="JUnit.roleMapperTest.testfind" />
         <item itemvalue="JUnit.userMapperTest.testfind" />
-        <item itemvalue="Spring Boot.project_jwt_authApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +207,8 @@
       <workItem from="1606973295541" duration="6893000" />
       <workItem from="1607133800331" duration="1199000" />
       <workItem from="1607230515303" duration="801000" />
-      <workItem from="1607338757781" duration="10825000" />
+      <workItem from="1607338757781" duration="12215000" />
+      <workItem from="1607513808457" duration="7658000" />
     </task>
     <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin' into main&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1607090023097</created>
@@ -251,67 +259,69 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="519" y="66" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607090022262" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1607042983702">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="116" y="117" width="1688" height="806" key="DiffContextDialog" timestamp="1607522073985">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607042983702" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1607345193907">
+    <state x="116" y="117" width="1688" height="806" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607522073985" />
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1607523566227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="279" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606869585766" />
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607345193907" />
-    <state width="1877" height="399" key="GridCell.Tab.0.bottom" timestamp="1607349124779">
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607523566227" />
+    <state width="1877" height="399" key="GridCell.Tab.0.bottom" timestamp="1607524428239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607073877860" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606983121111" />
-    <state width="1877" height="399" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607349124779" />
-    <state width="1877" height="399" key="GridCell.Tab.0.center" timestamp="1607349124779">
+    <state width="1877" height="399" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607524428239" />
+    <state width="1877" height="399" key="GridCell.Tab.0.center" timestamp="1607524428239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607073877860" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606983121111" />
-    <state width="1877" height="399" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607349124779" />
-    <state width="1877" height="399" key="GridCell.Tab.0.left" timestamp="1607349124779">
+    <state width="1877" height="399" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607524428239" />
+    <state width="1877" height="399" key="GridCell.Tab.0.left" timestamp="1607524428239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607073877859" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606983121110" />
-    <state width="1877" height="399" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607349124779" />
-    <state width="1877" height="399" key="GridCell.Tab.0.right" timestamp="1607349124779">
+    <state width="1877" height="399" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607524428239" />
+    <state width="1877" height="399" key="GridCell.Tab.0.right" timestamp="1607524428239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607073877860" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606983121111" />
-    <state width="1877" height="399" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607349124779" />
-    <state width="1877" height="399" key="GridCell.Tab.1.bottom" timestamp="1607345104259">
+    <state width="1877" height="399" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607524428239" />
+    <state width="1877" height="399" key="GridCell.Tab.1.bottom" timestamp="1607524428240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607073877861" />
     <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606983121112" />
-    <state width="1877" height="399" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607345104259" />
-    <state width="1877" height="399" key="GridCell.Tab.1.center" timestamp="1607345104259">
+    <state width="1877" height="399" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607524428240" />
+    <state width="1877" height="399" key="GridCell.Tab.1.center" timestamp="1607524428239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607073877861" />
     <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606983121112" />
-    <state width="1877" height="399" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607345104259" />
-    <state width="1877" height="399" key="GridCell.Tab.1.left" timestamp="1607345104259">
+    <state width="1877" height="399" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607524428239" />
+    <state width="1877" height="399" key="GridCell.Tab.1.left" timestamp="1607524428239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607073877860" />
     <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606983121111" />
-    <state width="1877" height="399" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607345104259" />
-    <state width="1877" height="399" key="GridCell.Tab.1.right" timestamp="1607345104259">
+    <state width="1877" height="399" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607524428239" />
+    <state width="1877" height="399" key="GridCell.Tab.1.right" timestamp="1607524428240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607073877861" />
     <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606983121112" />
-    <state width="1877" height="399" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607345104259" />
-    <state x="2381" y="162" key="SettingsEditor" timestamp="1606725396168">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="399" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607524428240" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1607517502635">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="162" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606725396168" />
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607517502635" />
     <state x="2522" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606893923051">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

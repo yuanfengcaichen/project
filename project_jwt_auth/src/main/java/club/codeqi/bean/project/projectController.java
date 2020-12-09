@@ -49,16 +49,13 @@ public class projectController {
     }
 
     //@PreAuthorize("hasAuthority('project')")
-    @GetMapping("/project")
-    public List projectAll(){
-//        PageHelper.startPage(page.getPage(), page.getRows());
-//        List<project> list = projectMapper.selectAll();
-//        PageInfo<project> pageInfo = new PageInfo<>(list);
-//        return pageInfo;
-        //return projectMapper.selectAll();
-        PageHelper.startPage(2, 10);
+    @GetMapping("/projects")
+    public PageInfo projectAll(@RequestParam(required = false,name = "pageNum") Integer pageNum,@RequestParam(required = false,name = "pageSize") Integer pageSize){
+        if(pageNum == null) pageNum = 1;
+        if(pageSize == null) pageSize = 10;
+        PageHelper.startPage(pageNum, pageSize);
         List<project> list = projectMapper.selectList(null);
-        int count = projectMapper.selectCount(null);
-        return list;
+        PageInfo page = new PageInfo(list);
+        return page;
     }
 }

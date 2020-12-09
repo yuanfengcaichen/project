@@ -1,5 +1,6 @@
 package club.codeqi.bean.project;
 
+import com.github.pagehelper.PageInfo;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,6 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
@@ -56,10 +58,10 @@ class projectControllerTest {
 
     @Test
     void projectAll() {
-        List list = projectController.projectAll();
-        System.out.println(list.size());
-        for(Object o: list){
-            System.out.println(o);
-        }
+//        PageInfo page = projectController.projectAll(new HashMap());
+////        System.out.println(map.size());
+////        System.out.println(map);
+////        PageInfo page = new PageInfo((List) map.get("list"));
+//        System.out.println(page);
     }
 }

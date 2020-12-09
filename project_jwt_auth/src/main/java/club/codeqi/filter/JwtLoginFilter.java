@@ -67,7 +67,7 @@ public class JwtLoginFilter extends UsernamePasswordAuthenticationFilter {
         user.setIs_lock(auuser.getIs_lock());
         user.setRole_id(auuser.getRole_id());
         user.setCreate_time(auuser.getCreate_time());
-        String token = JwtUtils.generateTokenExpireInMinutes(user,prop.getPrivateKey(),1);
+        String token = JwtUtils.generateTokenExpireInMinutes(user,prop.getPrivateKey(),60*24);
         response.addHeader("Authorization","Bearer "+token);
         try {
             response.setContentType("application/json;charset=utf-8");

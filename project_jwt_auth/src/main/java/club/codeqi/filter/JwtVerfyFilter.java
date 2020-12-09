@@ -69,6 +69,7 @@ public class JwtVerfyFilter extends BasicAuthenticationFilter {
                 out.write(new ObjectMapper().writeValueAsString(resultMap));
                 out.flush();
                 out.close();
+                System.out.println(e);
             }
         }
     }
