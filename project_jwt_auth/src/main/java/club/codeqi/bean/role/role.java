@@ -1,6 +1,10 @@
 package club.codeqi.bean.role;
 
+import club.codeqi.bean.permission.permission;
+import com.baomidou.mybatisplus.annotation.TableField;
+
 import java.util.Date;
+import java.util.List;
 
 public class role {
     private Integer rid;
@@ -8,6 +12,9 @@ public class role {
     private String role_info;
     private Integer is_lock;
     private Date create_time;
+
+    @TableField(exist = false)
+    private List<permission> permissions;
 
     public Integer getRid() {
         return rid;
@@ -49,6 +56,14 @@ public class role {
         this.create_time = create_time;
     }
 
+    public List<permission> getPermissions() {
+        return permissions;
+    }
+
+    public void setPermissions(List<permission> permissions) {
+        this.permissions = permissions;
+    }
+
     @Override
     public String toString() {
         return "role{" +
@@ -57,6 +72,7 @@ public class role {
                 ", role_info='" + role_info + '\'' +
                 ", is_lock=" + is_lock +
                 ", create_time=" + create_time +
+                ", permissions=" + permissions +
                 '}';
     }
 }

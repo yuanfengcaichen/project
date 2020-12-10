@@ -70,7 +70,13 @@
     <!-- 查询，根据条件(参数为null或0时默认忽略此条件)【G】 -->
     <select id="selectAll" resultMap="model">
         <include refid="select_sql"></include>
+        group by permission_code
     </select>
+
+	<select id="selectByrid" resultMap="model">
+		<include refid="select_sql"></include>
+		where role_id = #{rid}
+	</select>
 
 
 </mapper>

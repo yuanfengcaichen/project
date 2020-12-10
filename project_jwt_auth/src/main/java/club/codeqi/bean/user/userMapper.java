@@ -15,5 +15,7 @@ public interface userMapper extends BaseMapper<user> {
     public user selectByid(Integer uid);
     public int delete(int uid);
 
+    public ArrayList<user> select_roleAll();
+
     public user findByName(String name);
 }

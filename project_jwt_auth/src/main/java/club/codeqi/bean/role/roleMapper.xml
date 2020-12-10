@@ -32,44 +32,40 @@
 
 
     <!-- 通用映射：手动模式 -->
-    <!--
-    <resultMap id="model" type="com.pj.project.payrolls.Payrolls">
-        <result property="id" column="id" />
-        <result property="uid" column="uid" />
-        <result property="mouth" column="mouth" />
-        <result property="basic" column="basic" />
-        <result property="postion" column="postion" />
-        <result property="merit" column="merit" />
-        <result property="fare" column="fare" />
-        <result property="total_wages" column="total_wages" />
-        <result property="personal_leave" column="personal_leave" />
-        <result property="late" column="late" />
-        <result property="social_security" column="social_security" />
-        <result property="accumulation_fund" column="accumulation_fund" />
-        <result property="other" column="other" />
-        <result property="total_deduct" column="total_deduct" />
-        <result property="net_payment" column="net_payment" />
-        <result property="sp_admin_name" column="sp_admin_name" />
-    </resultMap>
-    -->
+	<resultMap id="role_Map" type="club.codeqi.bean.role.role">
+		<id property="rid" column="rid" />
+		<result property="role_name" column="role_name"/>
+		<result property="role_info" column="role_info"/>
+		<result property="is_lock" column="is_lock"></result>
+		<result property="create_time" column="create_time"></result>
+		<collection property="permissions" ofType="club.codeqi.bean.permission.permission" column="id">
+			<id property="perid" column="perid"></id>
+			<result property="permission_code" column="permission_code"></result>
+			<result property="permission_info" column="permission_info"></result>
+		</collection>
+	</resultMap>
 
 
     <!-- 公共查询sql片段 -->
     <sql id="select_sql">
-		select *
-		from role
+		SELECT
+			r.*, p.perid, p.permission_code, p.permission_info
+		FROM
+			role r
+		LEFT JOIN permission p ON r.rid = p.role_id
 	</sql>
 
 
     <!-- 查 -->
-    <select id="selectByid" resultMap="model">
+    <select id="selectByid" resultMap="role_Map">
         <include refid="select_sql"></include>
         where rid = #{rid}
     </select>
 
     <!-- 查询，根据条件(参数为null或0时默认忽略此条件)【G】 -->
-    <select id="selectAll" resultMap="model">
+    <select id="selectAll" resultMap="role_Map">
         <include refid="select_sql"></include>
+        group by r.rid
     </select>
 
 

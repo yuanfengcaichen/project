@@ -42,6 +42,12 @@ class userMapperTest {
     }
 
     @Test
+    void select_roleAll() {
+        System.out.println(userMapper.select_roleAll());
+    }
+
+
+    @Test
     void selectByid() {
         System.out.println(userMapper.selectByid(1));
     }

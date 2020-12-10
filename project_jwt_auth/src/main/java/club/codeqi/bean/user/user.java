@@ -2,6 +2,7 @@ package club.codeqi.bean.user;
 
 
 import club.codeqi.bean.permission.permission;
+import club.codeqi.bean.role.role;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.ibatis.annotations.Select;
@@ -21,6 +22,7 @@ public class user implements UserDetails {
     private Integer role_id;
     private Integer is_lock;
     private Date create_time;
+    private role userrole;
 
     @TableField(exist = false)
     private List<permission> permissions;
@@ -114,6 +116,14 @@ public class user implements UserDetails {
         this.permissions = permissions;
     }
 
+    public role getUserrole() {
+        return userrole;
+    }
+
+    public void setUserrole(role userrole) {
+        this.userrole = userrole;
+    }
+
     @Override
     public String toString() {
         return "user{" +
@@ -123,6 +133,7 @@ public class user implements UserDetails {
                 ", role_id=" + role_id +
                 ", is_lock=" + is_lock +
                 ", create_time=" + create_time +
+                ", userrole=" + userrole +
                 ", permissions=" + permissions +
                 '}';
     }
