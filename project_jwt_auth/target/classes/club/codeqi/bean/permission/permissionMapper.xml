@@ -13,6 +13,11 @@
 		delete from permission where perid = #{perid}
 	</delete>
 
+	<!-- 删 -->
+	<delete id="deleteByrid">
+		delete from permission where role_id = #{role_id}
+	</delete>
+
     <!-- 改【G】 -->
     <update id="update">
 		update permission set
@@ -70,7 +75,7 @@
     <!-- 查询，根据条件(参数为null或0时默认忽略此条件)【G】 -->
     <select id="selectAll" resultMap="model">
         <include refid="select_sql"></include>
-        group by permission_code
+        where role_id = 1
     </select>
 
 	<select id="selectByrid" resultMap="model">

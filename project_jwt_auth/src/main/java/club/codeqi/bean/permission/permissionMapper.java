@@ -12,4 +12,5 @@ public interface permissionMapper {
     public permission selectByid(Integer perid);
     public ArrayList<permission> selectByrid(Integer rid);
     public int delete(int perid);
+    public int deleteByrid(int rid);
 }
