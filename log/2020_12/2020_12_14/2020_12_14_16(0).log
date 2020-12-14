@@ -1,0 +1,151 @@
+2020-12-14 16:38:50.911 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-0NNS7PI with PID 7200 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-14 16:38:50.919 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-14 16:38:50.920 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-14 16:38:52.538 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-14 16:38:52.543 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-14 16:38:52.625 INFO  [main] --> : Finished Spring Data repository scanning in 43ms. Found 0 Redis repository interfaces.
+2020-12-14 16:38:53.231 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2687f956' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 16:38:53.241 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 16:38:53.721 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-14 16:38:53.759 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-14 16:38:53.761 INFO  [main] --> : Starting service [Tomcat]
+2020-12-14 16:38:53.761 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-14 16:38:54.124 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-14 16:38:54.125 INFO  [main] --> : Root WebApplicationContext: initialization completed in 3126 ms
+2020-12-14 16:38:54.559 INFO  [main] --> : Init DruidDataSource
+2020-12-14 16:38:54.985 INFO  [main] --> : {dataSource-1} inited
+2020-12-14 16:38:56.944 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-14 16:38:56.969 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 16:38:56.983 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 16:38:57.008 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 16:38:57.369 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-14 16:38:57.374 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 16:38:57.379 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 16:38:57.395 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 16:38:57.471 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-14 16:38:57.476 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 16:38:57.480 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 16:38:57.495 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 16:38:57.896 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b960a7, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f9f381d, org.springframework.security.web.header.HeaderWriterFilter@67514bdd, org.springframework.web.filter.CorsFilter@23a5818e, org.springframework.security.web.authentication.logout.LogoutFilter@57272109, club.codeqi.filter.JwtLoginFilter@31dfc6f5, club.codeqi.filter.JwtVerfyFilter@37b52340, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@623ebac7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@753aca85, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@663bb8ef, org.springframework.security.web.session.SessionManagementFilter@7f5538a1, org.springframework.security.web.access.ExceptionTranslationFilter@173a6728, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46aa712c]
+2020-12-14 16:38:58.308 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-14 16:38:59.803 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-14 16:38:59.861 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-14 16:38:59.889 INFO  [main] --> : Started project_jwt_authApplication in 10.243 seconds (JVM running for 12.55)
+2020-12-14 16:41:57.370 INFO  [http-nio-9001-exec-1] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-14 16:41:57.371 INFO  [http-nio-9001-exec-1] --> : Initializing Servlet 'dispatcherServlet'
+2020-12-14 16:41:57.388 INFO  [http-nio-9001-exec-1] --> : Completed initialization in 17 ms
+2020-12-14 16:41:59.049 DEBUG [http-nio-9001-exec-6] --> : Request is to process authentication
+2020-12-14 16:42:00.041 DEBUG [http-nio-9001-exec-6] --> : ==>  Preparing: SELECT u.*, r.rid, r.role_name, r.role_info, p.perid, p.permission_code, p.permission_info FROM USER u LEFT JOIN role r ON u.role_id = r.rid LEFT JOIN permission p ON u.role_id = p.role_id WHERE username = ? 
+2020-12-14 16:42:00.071 DEBUG [http-nio-9001-exec-6] --> : ==> Parameters: test02(String)
+2020-12-14 16:42:00.124 DEBUG [http-nio-9001-exec-6] --> : <==      Total: 3
+2020-12-14 16:42:03.358 DEBUG [http-nio-9001-exec-1] --> : ==>  Preparing: SELECT count(0) FROM permission WHERE role_id = 1 
+2020-12-14 16:42:03.359 DEBUG [http-nio-9001-exec-1] --> : ==> Parameters: 
+2020-12-14 16:42:03.371 DEBUG [http-nio-9001-exec-1] --> : <==      Total: 1
+2020-12-14 16:42:03.376 DEBUG [http-nio-9001-exec-1] --> : ==>  Preparing: select * from permission where role_id = 1 LIMIT ? 
+2020-12-14 16:42:03.378 DEBUG [http-nio-9001-exec-1] --> : ==> Parameters: 100(Integer)
+2020-12-14 16:42:03.395 DEBUG [http-nio-9001-exec-1] --> : <==      Total: 3
+2020-12-14 16:42:03.397 DEBUG [http-nio-9001-exec-2] --> : ==>  Preparing: SELECT count(0) FROM (SELECT r.*, p.perid, p.permission_code, p.permission_info FROM role r LEFT JOIN permission p ON r.rid = p.role_id GROUP BY r.rid) table_count 
+2020-12-14 16:42:03.397 DEBUG [http-nio-9001-exec-2] --> : ==> Parameters: 
+2020-12-14 16:42:03.410 DEBUG [http-nio-9001-exec-2] --> : <==      Total: 1
+2020-12-14 16:42:03.411 DEBUG [http-nio-9001-exec-2] --> : ==>  Preparing: SELECT r.*, p.perid, p.permission_code, p.permission_info FROM role r LEFT JOIN permission p ON r.rid = p.role_id group by r.rid LIMIT ? 
+2020-12-14 16:42:03.412 DEBUG [http-nio-9001-exec-2] --> : ==> Parameters: 5(Integer)
+2020-12-14 16:42:03.426 DEBUG [http-nio-9001-exec-2] --> : <==      Total: 4
+2020-12-14 16:43:39.899 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-0NNS7PI with PID 5288 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-14 16:43:39.904 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-14 16:43:39.905 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-14 16:43:41.623 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-14 16:43:41.628 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-14 16:43:41.679 INFO  [main] --> : Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2020-12-14 16:43:42.339 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2d6aca33' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 16:43:42.350 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 16:43:42.884 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-14 16:43:42.917 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-14 16:43:42.919 INFO  [main] --> : Starting service [Tomcat]
+2020-12-14 16:43:42.919 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-14 16:43:43.260 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-14 16:43:43.261 INFO  [main] --> : Root WebApplicationContext: initialization completed in 3136 ms
+2020-12-14 16:43:43.660 INFO  [main] --> : Init DruidDataSource
+2020-12-14 16:43:43.877 INFO  [main] --> : {dataSource-1} inited
+2020-12-14 16:43:45.505 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-14 16:43:45.528 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 16:43:45.541 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 16:43:45.566 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 16:43:45.878 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-14 16:43:45.886 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 16:43:45.892 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 16:43:45.913 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 16:43:45.996 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-14 16:43:46.000 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 16:43:46.004 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 16:43:46.022 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 16:43:46.372 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70e94ecb, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fa9ab6, org.springframework.security.web.header.HeaderWriterFilter@7dbe2ebf, org.springframework.web.filter.CorsFilter@2e179f3e, org.springframework.security.web.authentication.logout.LogoutFilter@6a818392, club.codeqi.filter.JwtLoginFilter@56cfe111, club.codeqi.filter.JwtVerfyFilter@7e446d92, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a2341c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e9469b8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57f9b467, org.springframework.security.web.session.SessionManagementFilter@885e7ff, org.springframework.security.web.access.ExceptionTranslationFilter@3f1ed068, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@459f703f]
+2020-12-14 16:43:46.770 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-14 16:43:48.269 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-14 16:43:48.320 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-14 16:43:48.344 INFO  [main] --> : Started project_jwt_authApplication in 9.365 seconds (JVM running for 11.355)
+2020-12-14 16:49:41.013 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-0NNS7PI with PID 15420 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-14 16:49:41.019 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-14 16:49:41.020 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-14 16:49:42.607 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-14 16:49:42.611 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-14 16:49:42.660 INFO  [main] --> : Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-12-14 16:49:43.314 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5e840abf' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 16:49:43.321 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 16:49:43.926 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-14 16:49:43.947 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-14 16:49:43.948 INFO  [main] --> : Starting service [Tomcat]
+2020-12-14 16:49:43.949 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-14 16:49:44.317 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-14 16:49:44.318 INFO  [main] --> : Root WebApplicationContext: initialization completed in 3205 ms
+2020-12-14 16:49:44.801 INFO  [main] --> : Init DruidDataSource
+2020-12-14 16:49:45.287 INFO  [main] --> : {dataSource-1} inited
+2020-12-14 16:49:47.054 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-14 16:49:47.069 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 16:49:47.077 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 16:49:47.107 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 16:49:47.495 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-14 16:49:47.499 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 16:49:47.505 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 16:49:47.521 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 16:49:47.590 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-14 16:49:47.594 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 16:49:47.598 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 16:49:47.610 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 16:49:47.964 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44b29496, org.springframework.security.web.context.SecurityContextPersistenceFilter@64db4967, org.springframework.security.web.header.HeaderWriterFilter@2d3ef181, org.springframework.web.filter.CorsFilter@6c931d35, org.springframework.security.web.authentication.logout.LogoutFilter@3743539f, club.codeqi.filter.JwtLoginFilter@1947596f, club.codeqi.filter.JwtVerfyFilter@3078cac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a485a36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79e66b2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f6de586, org.springframework.security.web.session.SessionManagementFilter@6e4c0d8c, org.springframework.security.web.access.ExceptionTranslationFilter@8bd86c8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a8b9166]
+2020-12-14 16:49:48.322 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-14 16:49:49.816 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-14 16:49:49.863 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-14 16:49:49.887 INFO  [main] --> : Started project_jwt_authApplication in 9.875 seconds (JVM running for 11.957)
+2020-12-14 16:51:20.345 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-0NNS7PI with PID 17060 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-14 16:51:20.349 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-14 16:51:20.350 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-14 16:51:21.888 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-14 16:51:21.891 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-14 16:51:21.939 INFO  [main] --> : Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-12-14 16:51:22.596 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@a50ae65' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 16:51:22.607 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 16:51:23.153 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-14 16:51:23.173 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-14 16:51:23.174 INFO  [main] --> : Starting service [Tomcat]
+2020-12-14 16:51:23.175 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-14 16:51:23.567 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-14 16:51:23.567 INFO  [main] --> : Root WebApplicationContext: initialization completed in 3129 ms
+2020-12-14 16:51:24.102 INFO  [main] --> : Init DruidDataSource
+2020-12-14 16:51:24.378 INFO  [main] --> : {dataSource-1} inited
+2020-12-14 16:51:25.935 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-14 16:51:25.958 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 16:51:25.971 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 16:51:25.997 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 16:51:26.376 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-14 16:51:26.382 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 16:51:26.387 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 16:51:26.401 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 16:51:26.461 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-14 16:51:26.464 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 16:51:26.467 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 16:51:26.478 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 16:51:26.809 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44b29496, org.springframework.security.web.context.SecurityContextPersistenceFilter@64db4967, org.springframework.security.web.header.HeaderWriterFilter@2d3ef181, org.springframework.web.filter.CorsFilter@6c931d35, org.springframework.security.web.authentication.logout.LogoutFilter@3743539f, club.codeqi.filter.JwtLoginFilter@1947596f, club.codeqi.filter.JwtVerfyFilter@3078cac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a485a36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79e66b2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f6de586, org.springframework.security.web.session.SessionManagementFilter@6e4c0d8c, org.springframework.security.web.access.ExceptionTranslationFilter@8bd86c8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a8b9166]
+2020-12-14 16:51:27.246 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-14 16:51:28.644 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-14 16:51:28.676 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-14 16:51:28.691 INFO  [main] --> : Started project_jwt_authApplication in 9.155 seconds (JVM running for 11.175)

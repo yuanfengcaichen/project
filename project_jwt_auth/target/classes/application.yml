@@ -35,6 +35,11 @@ spring:
 logging:
   level:
     club.codeqi: debug
+  file:
+    path: ./logs
+    name: ${logging.file.path}/%d{yyyy_MM}/%d{yyyy_MM_dd}/%d{yyyy_MM_dd_HH}(%i).log
+
+
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
