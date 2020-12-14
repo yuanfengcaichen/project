@@ -2,10 +2,11 @@ package club.codeqi.bean.file;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class file {
+public class file implements Serializable {
 
     private Integer fid;
     private Integer p_id;

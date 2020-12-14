@@ -2,10 +2,11 @@ package club.codeqi.bean.stage;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class stage {
+public class stage implements Serializable {
 
     private Integer sid;
     private Integer p_id;

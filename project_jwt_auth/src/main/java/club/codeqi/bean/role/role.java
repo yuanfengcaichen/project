@@ -3,10 +3,11 @@ package club.codeqi.bean.role;
 import club.codeqi.bean.permission.permission;
 import com.baomidou.mybatisplus.annotation.TableField;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class role {
+public class role implements Serializable {
     private Integer rid;
     private String role_name;
     private String role_info;

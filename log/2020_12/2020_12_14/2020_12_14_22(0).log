@@ -1,0 +1,33 @@
+2020-12-14 22:37:14.604 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-5NPPL9S with PID 6380 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by Administrator in E:\ImportantPlan\项目管理\project)
+2020-12-14 22:37:14.608 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-14 22:37:14.609 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-14 22:37:15.940 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-14 22:37:15.942 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-14 22:37:15.993 INFO  [main] --> : Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2020-12-14 22:37:16.464 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@47f08b81' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 22:37:16.470 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-14 22:37:16.871 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-14 22:37:16.885 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-14 22:37:16.886 INFO  [main] --> : Starting service [Tomcat]
+2020-12-14 22:37:16.886 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-14 22:37:17.059 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-14 22:37:17.060 INFO  [main] --> : Root WebApplicationContext: initialization completed in 2364 ms
+2020-12-14 22:37:17.251 INFO  [main] --> : Init DruidDataSource
+2020-12-14 22:37:17.527 INFO  [main] --> : {dataSource-1} inited
+2020-12-14 22:37:18.532 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-14 22:37:18.541 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 22:37:18.546 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 22:37:18.557 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 22:37:18.698 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-14 22:37:18.700 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 22:37:18.702 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 22:37:18.708 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 22:37:18.739 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-14 22:37:18.741 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-14 22:37:18.742 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-14 22:37:18.747 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-14 22:37:18.876 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4527f70a, org.springframework.security.web.context.SecurityContextPersistenceFilter@512575e9, org.springframework.security.web.header.HeaderWriterFilter@352ed70d, org.springframework.web.filter.CorsFilter@e9ef5b6, org.springframework.security.web.authentication.logout.LogoutFilter@4c2af006, club.codeqi.filter.JwtLoginFilter@707b1a44, club.codeqi.filter.JwtVerfyFilter@7132a9dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2373ad99, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@765ffb14, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57435801, org.springframework.security.web.session.SessionManagementFilter@5793b87, org.springframework.security.web.access.ExceptionTranslationFilter@33063f5b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60b34931]
+2020-12-14 22:37:19.051 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-14 22:37:19.664 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-14 22:37:19.687 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-14 22:37:19.697 INFO  [main] --> : Started project_jwt_authApplication in 5.856 seconds (JVM running for 7.019)

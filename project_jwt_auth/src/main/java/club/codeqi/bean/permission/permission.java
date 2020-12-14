@@ -3,9 +3,10 @@ package club.codeqi.bean.permission;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class permission implements GrantedAuthority {
+public class permission implements GrantedAuthority, Serializable {
     private Integer perid;
     private Integer role_id;
     private String permission_code;
