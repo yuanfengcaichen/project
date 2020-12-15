@@ -1,0 +1,30 @@
+2020-12-15 08:53:22.235 INFO  [main] --> : Starting redistest on DESKTOP-0NNS7PI with PID 7092 (started by qiyuan in E:\ImportantPlan\项目管理\project\project_jwt_auth)
+2020-12-15 08:53:22.238 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-15 08:53:22.240 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 08:53:24.177 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 08:53:24.186 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 08:53:24.290 INFO  [main] --> : Finished Spring Data repository scanning in 52ms. Found 0 Redis repository interfaces.
+2020-12-15 08:53:25.890 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5ef6fd7f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 08:53:25.925 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 08:53:26.437 INFO  [main] --> : Init DruidDataSource
+2020-12-15 08:53:27.037 INFO  [main] --> : {dataSource-1} inited
+2020-12-15 08:53:28.834 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-15 08:53:28.850 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 08:53:28.863 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 08:53:28.888 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 08:53:29.014 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-15 08:53:29.017 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 08:53:29.020 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 08:53:29.034 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 08:53:29.116 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-15 08:53:29.119 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 08:53:29.123 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 08:53:29.136 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 08:53:31.218 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21bd128b, org.springframework.security.web.context.SecurityContextPersistenceFilter@54c622a7, org.springframework.security.web.header.HeaderWriterFilter@5be052ca, org.springframework.web.filter.CorsFilter@2d0b05, org.springframework.security.web.authentication.logout.LogoutFilter@2d74c81b, club.codeqi.filter.JwtLoginFilter@4b432e53, club.codeqi.filter.JwtVerfyFilter@2b916808, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76e3b45b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@310ed6b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62f11ebb, org.springframework.security.web.session.SessionManagementFilter@ebda593, org.springframework.security.web.access.ExceptionTranslationFilter@35b17c06, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65bb6275]
+2020-12-15 08:53:32.481 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 08:53:37.147 INFO  [main] --> : Started redistest in 15.875 seconds (JVM running for 18.898)
+2020-12-15 08:53:40.577 DEBUG [main] --> : ==>  Preparing: SELECT u.*, r.rid, r.role_name, r.role_info, p.perid, p.permission_code, p.permission_info FROM USER u LEFT JOIN role r ON u.role_id = r.rid LEFT JOIN permission p ON u.role_id = p.role_id WHERE username = ? 
+2020-12-15 08:53:40.654 DEBUG [main] --> : ==> Parameters: test02(String)
+2020-12-15 08:53:40.721 DEBUG [main] --> : <==      Total: 3
+2020-12-15 08:53:41.059 INFO  [SpringContextShutdownHook] --> : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-15 08:53:41.075 INFO  [SpringContextShutdownHook] --> : {dataSource-1} closed

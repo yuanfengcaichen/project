@@ -21,6 +21,7 @@ spring:
     # password:
     # 连接超时时间（毫秒）
     timeout: 1000ms
+    expire: 200 #自定义缓存过期时间
     lettuce:
       pool:
         # 连接池最大连接数
@@ -31,6 +32,10 @@ spring:
         max-idle: 10
         # 连接池中的最小空闲连接
         min-idle: 1
+#  cache:
+#    redis:
+#      time-to-live: 2000
+#    cache-names: users
 
 logging:
   level:
@@ -38,7 +43,6 @@ logging:
   file:
     path: ./logs
     name: ${logging.file.path}/%d{yyyy_MM}/%d{yyyy_MM_dd}/%d{yyyy_MM_dd_HH}(%i).log
-
 
 mybatis-plus:
   configuration:
