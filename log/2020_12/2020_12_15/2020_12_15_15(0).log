@@ -1,0 +1,341 @@
+2020-12-15 15:02:03.102 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-0NNS7PI with PID 16712 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-15 15:02:03.105 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-15 15:02:03.106 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 15:02:04.546 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 15:02:04.551 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 15:02:04.626 INFO  [main] --> : Finished Spring Data repository scanning in 42ms. Found 0 Redis repository interfaces.
+2020-12-15 15:02:05.503 INFO  [main] --> : Bean 'redisCache' of type [club.codeqi.config.redisCache$$EnhancerBySpringCGLIB$$9d739630] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:02:05.624 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@33b082c5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:02:05.649 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:02:06.324 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-15 15:02:06.344 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-15 15:02:06.345 INFO  [main] --> : Starting service [Tomcat]
+2020-12-15 15:02:06.346 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-15 15:02:06.676 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-15 15:02:06.677 INFO  [main] --> : Root WebApplicationContext: initialization completed in 3480 ms
+2020-12-15 15:02:07.182 INFO  [main] --> : Init DruidDataSource
+2020-12-15 15:02:07.959 INFO  [main] --> : {dataSource-1} inited
+2020-12-15 15:02:09.553 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-15 15:02:09.566 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:02:09.571 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:02:09.585 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:02:09.948 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-15 15:02:09.954 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:02:09.961 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:02:09.980 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:02:10.088 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-15 15:02:10.092 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:02:10.096 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:02:10.120 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:02:10.465 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@118dcbbd, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f631ca0, org.springframework.security.web.header.HeaderWriterFilter@7fc420b8, org.springframework.web.filter.CorsFilter@24a86066, org.springframework.security.web.authentication.logout.LogoutFilter@109f8c7e, club.codeqi.filter.JwtLoginFilter@7d979d34, club.codeqi.filter.JwtVerfyFilter@350ec690, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12ad1b2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3468ee6e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49cb1baf, org.springframework.security.web.session.SessionManagementFilter@e38f0b7, org.springframework.security.web.access.ExceptionTranslationFilter@221a2068, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@286090c]
+2020-12-15 15:02:11.399 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 15:02:12.668 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-15 15:02:12.713 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-15 15:02:12.737 INFO  [main] --> : Started project_jwt_authApplication in 10.564 seconds (JVM running for 12.89)
+2020-12-15 15:02:14.874 INFO  [http-nio-9001-exec-1] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 15:02:14.875 INFO  [http-nio-9001-exec-1] --> : Initializing Servlet 'dispatcherServlet'
+2020-12-15 15:02:14.898 INFO  [http-nio-9001-exec-1] --> : Completed initialization in 23 ms
+2020-12-15 15:02:15.306 INFO  [http-nio-9001-exec-3] --> : ---------------------------------------------
+2020-12-15 15:02:15.306 INFO  [http-nio-9001-exec-4] --> : ---------------------------------------------
+2020-12-15 15:02:15.312 INFO  [http-nio-9001-exec-4] --> : 请求路径:Tue Dec 15 15:02:15 CST 2020 http://127.0.0.1:9001/permisses  GET
+请求内容:{}
+2020-12-15 15:02:15.312 INFO  [http-nio-9001-exec-3] --> : 请求路径:Tue Dec 15 15:02:15 CST 2020 http://127.0.0.1:9001/roles  GET
+请求内容:{pageSize=5, pageNum=1}
+2020-12-15 15:02:15.969 DEBUG [http-nio-9001-exec-3] --> : ==>  Preparing: SELECT count(0) FROM (SELECT r.*, p.perid, p.permission_code, p.permission_info FROM role r LEFT JOIN permission p ON r.rid = p.role_id GROUP BY r.rid) table_count 
+2020-12-15 15:02:16.011 DEBUG [http-nio-9001-exec-3] --> : ==> Parameters: 
+2020-12-15 15:02:16.022 DEBUG [http-nio-9001-exec-4] --> : ==>  Preparing: SELECT count(0) FROM permission WHERE role_id = 1 
+2020-12-15 15:02:16.023 DEBUG [http-nio-9001-exec-4] --> : ==> Parameters: 
+2020-12-15 15:02:16.057 DEBUG [http-nio-9001-exec-4] --> : <==      Total: 1
+2020-12-15 15:02:16.057 DEBUG [http-nio-9001-exec-3] --> : <==      Total: 1
+2020-12-15 15:02:16.064 DEBUG [http-nio-9001-exec-3] --> : ==>  Preparing: SELECT r.*, p.perid, p.permission_code, p.permission_info FROM role r LEFT JOIN permission p ON r.rid = p.role_id group by r.rid LIMIT ? 
+2020-12-15 15:02:16.064 DEBUG [http-nio-9001-exec-4] --> : ==>  Preparing: select * from permission where role_id = 1 LIMIT ? 
+2020-12-15 15:02:16.066 DEBUG [http-nio-9001-exec-4] --> : ==> Parameters: 100(Integer)
+2020-12-15 15:02:16.066 DEBUG [http-nio-9001-exec-3] --> : ==> Parameters: 5(Integer)
+2020-12-15 15:02:16.087 DEBUG [http-nio-9001-exec-4] --> : <==      Total: 3
+2020-12-15 15:02:16.089 DEBUG [http-nio-9001-exec-3] --> : <==      Total: 4
+2020-12-15 15:02:16.092 INFO  [http-nio-9001-exec-4] --> : 请求结果：PageInfo{pageNum=1, pageSize=100, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=100, startRow=0, endRow=100, total=3, pages=1, reasonable=false, pageSizeZero=false}[permission{perid=1, role_id=1, permission_code='userManager', create_time=Wed Dec 02 16:15:44 CST 2020, permission_info='用户管理'}, permission{perid=2, role_id=1, permission_code='project', create_time=Wed Dec 02 22:31:51 CST 2020, permission_info='项目管理'}, permission{perid=3, role_id=1, permission_code='user', create_time=Wed Dec 02 22:45:39 CST 2020, permission_info='普通用户'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-12-15 15:02:16.092 INFO  [http-nio-9001-exec-3] --> : 请求结果：PageInfo{pageNum=1, pageSize=5, size=4, startRow=1, endRow=4, total=4, pages=1, list=Page{count=true, pageNum=1, pageSize=5, startRow=0, endRow=5, total=4, pages=1, reasonable=false, pageSizeZero=false}[role{rid=1, role_name='admin', role_info='最高管理员', is_lock=0, create_time=Wed Dec 02 16:15:03 CST 2020, permissions=[permission{perid=1, role_id=null, permission_code='userManager', create_time=null, permission_info='用户管理'}]}, role{rid=2, role_name='user', role_info='user角色信息', is_lock=0, create_time=Wed Dec 02 22:45:18 CST 2020, permissions=[permission{perid=22, role_id=null, permission_code='userManager', create_time=null, permission_info='用户管理'}]}, role{rid=3, role_name='test', role_info='test角色信息', is_lock=0, create_time=Wed Dec 02 16:15:03 CST 2020, permissions=[permission{perid=10, role_id=null, permission_code='userManager', create_time=null, permission_info='用户管理'}]}, role{rid=4, role_name='test08', role_info='test089', is_lock=1, create_time=Fri Dec 11 10:26:08 CST 2020, permissions=[]}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-12-15 15:02:16.092 INFO  [http-nio-9001-exec-4] --> : ---------------------------------------------
+2020-12-15 15:02:16.092 INFO  [http-nio-9001-exec-3] --> : ---------------------------------------------
+2020-12-15 15:03:24.084 DEBUG [http-nio-9001-exec-2] --> : Request is to process authentication
+2020-12-15 15:03:26.530 DEBUG [http-nio-9001-exec-2] --> : ==>  Preparing: SELECT u.*, r.rid, r.role_name, r.role_info, p.perid, p.permission_code, p.permission_info FROM USER u LEFT JOIN role r ON u.role_id = r.rid LEFT JOIN permission p ON u.role_id = p.role_id WHERE username = ? 
+2020-12-15 15:03:26.532 DEBUG [http-nio-9001-exec-2] --> : ==> Parameters: test02(String)
+2020-12-15 15:03:26.555 DEBUG [http-nio-9001-exec-2] --> : <==      Total: 3
+2020-12-15 15:03:26.966 INFO  [http-nio-9001-exec-3] --> : ---------------------------------------------
+2020-12-15 15:03:26.967 INFO  [http-nio-9001-exec-3] --> : 请求路径:Tue Dec 15 15:03:26 CST 2020 http://127.0.0.1:9001/userinfo  GET
+请求内容:{}
+2020-12-15 15:03:26.976 INFO  [http-nio-9001-exec-3] --> : 请求结果：{result=200, expire=Wed Dec 16 15:03:26 CST 2020, userinfo=user{uid=4, username='test02', password='', role_id=2, is_lock=0, create_time=Wed Dec 02 22:44:53 CST 2020, userrole=null, permissions=[permission{perid=22, role_id=null, permission_code='userManager', create_time=null, permission_info='用户管理'}, permission{perid=23, role_id=null, permission_code='project', create_time=null, permission_info='项目管理'}, permission{perid=24, role_id=null, permission_code='user', create_time=null, permission_info='普通用户'}]}, token=Bearer eyJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoie1widWlkXCI6NCxcInVzZXJuYW1lXCI6XCJ0ZXN0MDJcIixcInBhc3N3b3JkXCI6XCJcIixcInJvbGVfaWRcIjoyLFwiaXNfbG9ja1wiOjAsXCJjcmVhdGVfdGltZVwiOjE2MDY5MjAyOTMwMDAsXCJ1c2Vycm9sZVwiOm51bGwsXCJwZXJtaXNzaW9uc1wiOlt7XCJwZXJpZFwiOjIyLFwicm9sZV9pZFwiOm51bGwsXCJwZXJtaXNzaW9uX2NvZGVcIjpcInVzZXJNYW5hZ2VyXCIsXCJjcmVhdGVfdGltZVwiOm51bGwsXCJwZXJtaXNzaW9uX2luZm9cIjpcIueUqOaIt-euoeeQhlwifSx7XCJwZXJpZFwiOjIzLFwicm9sZV9pZFwiOm51bGwsXCJwZXJtaXNzaW9uX2NvZGVcIjpcInByb2plY3RcIixcImNyZWF0ZV90aW1lXCI6bnVsbCxcInBlcm1pc3Npb25faW5mb1wiOlwi6aG555uu566h55CGXCJ9LHtcInBlcmlkXCI6MjQsXCJyb2xlX2lkXCI6bnVsbCxcInBlcm1pc3Npb25fY29kZVwiOlwidXNlclwiLFwiY3JlYXRlX3RpbWVcIjpudWxsLFwicGVybWlzc2lvbl9pbmZvXCI6XCLmma7pgJrnlKjmiLdcIn1dfSIsImp0aSI6Ik56QmhZV1E1T0dZdE1XTmlOaTAwWldSakxUZzJZVEV0T1RFeU1XRm1aR0ZqTWpkbCIsImV4cCI6MTYwODEwMjIwNn0.nTZ52j-GQzEtn-dRFIfK4EwawZFD4TFCvztCEKtVUZupIlkxq1C7kfe1UMvXqrm0AkNz4MpcOMIRL9l8KtOj3FUtbL0b4-TYsmaAq55Zyb2LMRZTVXe9ElBQI5tXrBNkT_oY-Gc4yFSU7LTNoF-qWATRUuQFvL8bInxn7P6xbTybBJQpzAjTv_oiXRv4FKmlAis80PGoFPJdloqqbm-UnNVsGrU5RIg_6iiYJ_LMI-5MBUam94rAvkTXKTokUj2hXnwpGyO1lgWNB_44pIvf8wBRKMzh0IkwlUeRNUbyCJ3wd_2YTj_0ccobdaRd4tHIIyb7CupHEOhsUPHtE-EGTg}
+2020-12-15 15:03:26.977 INFO  [http-nio-9001-exec-3] --> : ---------------------------------------------
+2020-12-15 15:13:14.816 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-0NNS7PI with PID 17032 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-15 15:13:14.823 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-15 15:13:14.824 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 15:13:16.453 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 15:13:16.458 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 15:13:16.520 INFO  [main] --> : Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2020-12-15 15:13:17.382 INFO  [main] --> : Bean 'redisCache' of type [club.codeqi.config.redisCache$$EnhancerBySpringCGLIB$$5105c26c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:13:17.496 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@47ec7422' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:13:17.512 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:13:18.256 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-15 15:13:18.280 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-15 15:13:18.283 INFO  [main] --> : Starting service [Tomcat]
+2020-12-15 15:13:18.284 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-15 15:13:18.821 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-15 15:13:18.822 INFO  [main] --> : Root WebApplicationContext: initialization completed in 3908 ms
+2020-12-15 15:13:19.322 INFO  [main] --> : Init DruidDataSource
+2020-12-15 15:13:20.094 INFO  [main] --> : {dataSource-1} inited
+2020-12-15 15:13:21.696 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-15 15:13:21.717 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:13:21.731 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:13:21.759 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:13:22.254 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-15 15:13:22.258 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:13:22.264 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:13:22.282 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:13:22.401 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-15 15:13:22.406 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:13:22.411 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:13:22.425 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:13:22.848 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c6c4689, org.springframework.security.web.context.SecurityContextPersistenceFilter@5034f5dd, org.springframework.security.web.header.HeaderWriterFilter@724aefc3, org.springframework.web.filter.CorsFilter@7ff8a9dc, org.springframework.security.web.authentication.logout.LogoutFilter@6f6c6077, club.codeqi.filter.JwtLoginFilter@63cf9de0, club.codeqi.filter.JwtVerfyFilter@594d9f07, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a916402, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e7157c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5befbac1, org.springframework.security.web.session.SessionManagementFilter@2a097d77, org.springframework.security.web.access.ExceptionTranslationFilter@d08edc5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43b5021c]
+2020-12-15 15:13:23.953 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 15:13:25.439 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-15 15:13:25.477 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-15 15:13:25.494 INFO  [main] --> : Started project_jwt_authApplication in 11.691 seconds (JVM running for 14.231)
+2020-12-15 15:13:31.687 INFO  [http-nio-9001-exec-1] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 15:13:31.688 INFO  [http-nio-9001-exec-1] --> : Initializing Servlet 'dispatcherServlet'
+2020-12-15 15:13:31.732 INFO  [http-nio-9001-exec-1] --> : Completed initialization in 44 ms
+2020-12-15 15:13:32.393 INFO  [http-nio-9001-exec-3] --> : ---------------------------------------------
+2020-12-15 15:13:32.393 INFO  [http-nio-9001-exec-4] --> : ---------------------------------------------
+2020-12-15 15:13:32.395 INFO  [http-nio-9001-exec-3] --> : 请求路径: http://127.0.0.1:9001/permisses  GET
+请求内容:{}
+2020-12-15 15:13:32.395 INFO  [http-nio-9001-exec-4] --> : 请求路径: http://127.0.0.1:9001/roles  GET
+请求内容:{pageSize=5, pageNum=1}
+2020-12-15 15:13:34.584 DEBUG [http-nio-9001-exec-3] --> : ==>  Preparing: SELECT count(0) FROM permission WHERE role_id = 1 
+2020-12-15 15:13:34.616 DEBUG [http-nio-9001-exec-3] --> : ==> Parameters: 
+2020-12-15 15:13:34.655 DEBUG [http-nio-9001-exec-3] --> : <==      Total: 1
+2020-12-15 15:13:34.662 DEBUG [http-nio-9001-exec-3] --> : ==>  Preparing: select * from permission where role_id = 1 LIMIT ? 
+2020-12-15 15:13:34.665 DEBUG [http-nio-9001-exec-3] --> : ==> Parameters: 100(Integer)
+2020-12-15 15:13:34.682 DEBUG [http-nio-9001-exec-3] --> : <==      Total: 3
+2020-12-15 15:13:34.685 DEBUG [http-nio-9001-exec-4] --> : ==>  Preparing: SELECT count(0) FROM (SELECT r.*, p.perid, p.permission_code, p.permission_info FROM role r LEFT JOIN permission p ON r.rid = p.role_id GROUP BY r.rid) table_count 
+2020-12-15 15:13:34.685 INFO  [http-nio-9001-exec-3] --> : 请求结果：PageInfo{pageNum=1, pageSize=100, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=100, startRow=0, endRow=100, total=3, pages=1, reasonable=false, pageSizeZero=false}[permission{perid=1, role_id=1, permission_code='userManager', create_time=Wed Dec 02 16:15:44 CST 2020, permission_info='用户管理'}, permission{perid=2, role_id=1, permission_code='project', create_time=Wed Dec 02 22:31:51 CST 2020, permission_info='项目管理'}, permission{perid=3, role_id=1, permission_code='user', create_time=Wed Dec 02 22:45:39 CST 2020, permission_info='普通用户'}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-12-15 15:13:34.686 INFO  [http-nio-9001-exec-3] --> : ---------------------------------------------
+2020-12-15 15:13:34.686 DEBUG [http-nio-9001-exec-4] --> : ==> Parameters: 
+2020-12-15 15:13:34.750 DEBUG [http-nio-9001-exec-4] --> : <==      Total: 1
+2020-12-15 15:13:34.751 DEBUG [http-nio-9001-exec-4] --> : ==>  Preparing: SELECT r.*, p.perid, p.permission_code, p.permission_info FROM role r LEFT JOIN permission p ON r.rid = p.role_id group by r.rid LIMIT ? 
+2020-12-15 15:13:34.752 DEBUG [http-nio-9001-exec-4] --> : ==> Parameters: 5(Integer)
+2020-12-15 15:13:34.773 DEBUG [http-nio-9001-exec-4] --> : <==      Total: 4
+2020-12-15 15:13:34.774 INFO  [http-nio-9001-exec-4] --> : 请求结果：PageInfo{pageNum=1, pageSize=5, size=4, startRow=1, endRow=4, total=4, pages=1, list=Page{count=true, pageNum=1, pageSize=5, startRow=0, endRow=5, total=4, pages=1, reasonable=false, pageSizeZero=false}[role{rid=1, role_name='admin', role_info='最高管理员', is_lock=0, create_time=Wed Dec 02 16:15:03 CST 2020, permissions=[permission{perid=1, role_id=null, permission_code='userManager', create_time=null, permission_info='用户管理'}]}, role{rid=2, role_name='user', role_info='user角色信息', is_lock=0, create_time=Wed Dec 02 22:45:18 CST 2020, permissions=[permission{perid=22, role_id=null, permission_code='userManager', create_time=null, permission_info='用户管理'}]}, role{rid=3, role_name='test', role_info='test角色信息', is_lock=0, create_time=Wed Dec 02 16:15:03 CST 2020, permissions=[permission{perid=10, role_id=null, permission_code='userManager', create_time=null, permission_info='用户管理'}]}, role{rid=4, role_name='test08', role_info='test089', is_lock=1, create_time=Fri Dec 11 10:26:08 CST 2020, permissions=[]}], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2020-12-15 15:13:34.775 INFO  [http-nio-9001-exec-4] --> : ---------------------------------------------
+2020-12-15 15:14:07.977 DEBUG [http-nio-9001-exec-10] --> : Request is to process authentication
+2020-12-15 15:14:10.225 DEBUG [http-nio-9001-exec-10] --> : ==>  Preparing: SELECT u.*, r.rid, r.role_name, r.role_info, p.perid, p.permission_code, p.permission_info FROM USER u LEFT JOIN role r ON u.role_id = r.rid LEFT JOIN permission p ON u.role_id = p.role_id WHERE username = ? 
+2020-12-15 15:14:10.227 DEBUG [http-nio-9001-exec-10] --> : ==> Parameters: test02(String)
+2020-12-15 15:14:10.286 DEBUG [http-nio-9001-exec-10] --> : <==      Total: 3
+2020-12-15 15:14:10.996 INFO  [http-nio-9001-exec-1] --> : ---------------------------------------------
+2020-12-15 15:14:10.997 INFO  [http-nio-9001-exec-1] --> : 请求路径: http://127.0.0.1:9001/userinfo  GET
+请求内容:{}
+2020-12-15 15:14:11.008 INFO  [http-nio-9001-exec-1] --> : 请求结果：{result=200, expire=Wed Dec 16 15:14:10 CST 2020, userinfo=user{uid=4, username='test02', password='', role_id=2, is_lock=0, create_time=Wed Dec 02 22:44:53 CST 2020, userrole=null, permissions=[permission{perid=22, role_id=null, permission_code='userManager', create_time=null, permission_info='用户管理'}, permission{perid=23, role_id=null, permission_code='project', create_time=null, permission_info='项目管理'}, permission{perid=24, role_id=null, permission_code='user', create_time=null, permission_info='普通用户'}]}, token=Bearer eyJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoie1widWlkXCI6NCxcInVzZXJuYW1lXCI6XCJ0ZXN0MDJcIixcInBhc3N3b3JkXCI6XCJcIixcInJvbGVfaWRcIjoyLFwiaXNfbG9ja1wiOjAsXCJjcmVhdGVfdGltZVwiOjE2MDY5MjAyOTMwMDAsXCJ1c2Vycm9sZVwiOm51bGwsXCJwZXJtaXNzaW9uc1wiOlt7XCJwZXJpZFwiOjIyLFwicm9sZV9pZFwiOm51bGwsXCJwZXJtaXNzaW9uX2NvZGVcIjpcInVzZXJNYW5hZ2VyXCIsXCJjcmVhdGVfdGltZVwiOm51bGwsXCJwZXJtaXNzaW9uX2luZm9cIjpcIueUqOaIt-euoeeQhlwifSx7XCJwZXJpZFwiOjIzLFwicm9sZV9pZFwiOm51bGwsXCJwZXJtaXNzaW9uX2NvZGVcIjpcInByb2plY3RcIixcImNyZWF0ZV90aW1lXCI6bnVsbCxcInBlcm1pc3Npb25faW5mb1wiOlwi6aG555uu566h55CGXCJ9LHtcInBlcmlkXCI6MjQsXCJyb2xlX2lkXCI6bnVsbCxcInBlcm1pc3Npb25fY29kZVwiOlwidXNlclwiLFwiY3JlYXRlX3RpbWVcIjpudWxsLFwicGVybWlzc2lvbl9pbmZvXCI6XCLmma7pgJrnlKjmiLdcIn1dfSIsImp0aSI6Ik5EaGhZalJtWWpNdE1qbGxZaTAwWW1NeUxUZ3paV010TlRGak9HRTNZMkprWVRFMiIsImV4cCI6MTYwODEwMjg1MH0.hMmSOHW88Z08zgH20qDdAA7TpbsLXfzPntbgcAwmg3NmaCZbqrepWjMHqI_HusB2TmBsEwVNpVD_kBht34rKar6R5YKF9LFn_3eyoszl6hNlGU3G1AQzMzQGRE_-zoZy7LhyBlTqQn_MELrXeUtFA1tVFfI3_WhZcfhi46AmvwS_nSBooii9YGOE35Iqj_MHav2BiJDYUHObOZMtrjiynZNPAVW2R7UG8otjE4Vu67KOJMdd81QodErpmz--eqMvgab_NM_LpxnqeRd7S3ynkQ5POFdSndtBf2oD-JZaPDRwyML0bLCTzwhWGKlkKfww3pyuo_ex9Fzqe0XFIs8Z5g}
+2020-12-15 15:14:11.009 INFO  [http-nio-9001-exec-1] --> : ---------------------------------------------
+2020-12-15 15:16:41.672 INFO  [http-nio-9001-exec-8] --> : ---------------------------------------------
+2020-12-15 15:16:41.673 INFO  [http-nio-9001-exec-8] --> : 请求路径: http://127.0.0.1:9001/projects  GET
+请求内容:{action=getdata}
+2020-12-15 15:16:41.753 DEBUG [http-nio-9001-exec-8] --> : ==>  Preparing: SELECT count(0) FROM project 
+2020-12-15 15:16:41.755 DEBUG [http-nio-9001-exec-8] --> : ==> Parameters: 
+2020-12-15 15:16:41.768 DEBUG [http-nio-9001-exec-8] --> : <==      Total: 1
+2020-12-15 15:16:41.771 DEBUG [http-nio-9001-exec-8] --> : ==>  Preparing: SELECT pid,p_name,creat_uid,remarks,create_time,state,begin_time,end_time FROM project LIMIT ? 
+2020-12-15 15:16:41.772 DEBUG [http-nio-9001-exec-8] --> : ==> Parameters: 10(Integer)
+2020-12-15 15:16:41.795 DEBUG [http-nio-9001-exec-8] --> : <==      Total: 10
+2020-12-15 15:16:41.797 INFO  [http-nio-9001-exec-8] --> : 请求结果：PageInfo{pageNum=1, pageSize=10, size=10, startRow=1, endRow=10, total=12, pages=2, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=12, pages=2, reasonable=false, pageSizeZero=false}[project(pid=1, p_name=项目名称1, creat_uid=null, remarks=null, create_time=null, state=null, begin_time=null, end_time=null), project(pid=3, p_name=项目名称2, creat_uid=0, remarks=, create_time=Wed Dec 02 13:43:16 CST 2020, state=0, begin_time=Wed Dec 02 13:43:16 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=4, p_name=项目名称3, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:27 CST 2020, state=0, begin_time=Mon Dec 07 21:41:27 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=5, p_name=项目名称4, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=6, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=7, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=8, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=9, p_name=项目名称9, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=10, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=11, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021)], prePage=0, nextPage=2, isFirstPage=true, isLastPage=false, hasPreviousPage=false, hasNextPage=true, navigatePages=8, navigateFirstPage=1, navigateLastPage=2, navigatepageNums=[1, 2]}
+2020-12-15 15:16:41.797 INFO  [http-nio-9001-exec-8] --> : ---------------------------------------------
+2020-12-15 15:17:30.361 INFO  [http-nio-9001-exec-9] --> : ---------------------------------------------
+2020-12-15 15:17:30.361 INFO  [http-nio-9001-exec-9] --> : 请求路径: http://127.0.0.1:9001/projects  GET
+请求内容:{}
+2020-12-15 15:17:30.363 DEBUG [http-nio-9001-exec-9] --> : ==>  Preparing: SELECT count(0) FROM project 
+2020-12-15 15:17:30.364 DEBUG [http-nio-9001-exec-9] --> : ==> Parameters: 
+2020-12-15 15:17:30.444 DEBUG [http-nio-9001-exec-9] --> : <==      Total: 1
+2020-12-15 15:17:30.445 DEBUG [http-nio-9001-exec-9] --> : ==>  Preparing: SELECT pid,p_name,creat_uid,remarks,create_time,state,begin_time,end_time FROM project LIMIT ? 
+2020-12-15 15:17:30.446 DEBUG [http-nio-9001-exec-9] --> : ==> Parameters: 10(Integer)
+2020-12-15 15:17:30.470 DEBUG [http-nio-9001-exec-9] --> : <==      Total: 10
+2020-12-15 15:17:30.472 INFO  [http-nio-9001-exec-9] --> : 请求结果：PageInfo{pageNum=1, pageSize=10, size=10, startRow=1, endRow=10, total=12, pages=2, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=12, pages=2, reasonable=false, pageSizeZero=false}[project(pid=1, p_name=项目名称1, creat_uid=null, remarks=null, create_time=null, state=null, begin_time=null, end_time=null), project(pid=3, p_name=项目名称2, creat_uid=0, remarks=, create_time=Wed Dec 02 13:43:16 CST 2020, state=0, begin_time=Wed Dec 02 13:43:16 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=4, p_name=项目名称3, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:27 CST 2020, state=0, begin_time=Mon Dec 07 21:41:27 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=5, p_name=项目名称4, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=6, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=7, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=8, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=9, p_name=项目名称9, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=10, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=11, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021)], prePage=0, nextPage=2, isFirstPage=true, isLastPage=false, hasPreviousPage=false, hasNextPage=true, navigatePages=8, navigateFirstPage=1, navigateLastPage=2, navigatepageNums=[1, 2]}
+2020-12-15 15:17:30.472 INFO  [http-nio-9001-exec-9] --> : ---------------------------------------------
+2020-12-15 15:17:51.240 INFO  [http-nio-9001-exec-10] --> : ---------------------------------------------
+2020-12-15 15:17:51.241 INFO  [http-nio-9001-exec-10] --> : 请求路径: http://127.0.0.1:9001/project/100  GET
+请求内容:{}
+2020-12-15 15:17:51.242 DEBUG [http-nio-9001-exec-10] --> : ==>  Preparing: select * from project where pid = ? 
+2020-12-15 15:17:51.243 DEBUG [http-nio-9001-exec-10] --> : ==> Parameters: 100(Integer)
+2020-12-15 15:17:51.256 DEBUG [http-nio-9001-exec-10] --> : <==      Total: 0
+2020-12-15 15:18:32.096 INFO  [http-nio-9001-exec-2] --> : ---------------------------------------------
+2020-12-15 15:18:32.097 INFO  [http-nio-9001-exec-2] --> : 请求路径: http://127.0.0.1:9001/project/3  GET
+请求内容:{}
+2020-12-15 15:18:32.097 DEBUG [http-nio-9001-exec-2] --> : ==>  Preparing: select * from project where pid = ? 
+2020-12-15 15:18:32.098 DEBUG [http-nio-9001-exec-2] --> : ==> Parameters: 3(Integer)
+2020-12-15 15:18:32.112 DEBUG [http-nio-9001-exec-2] --> : <==      Total: 1
+2020-12-15 15:18:32.113 INFO  [http-nio-9001-exec-2] --> : 请求结果：project(pid=3, p_name=项目名称2, creat_uid=0, remarks=, create_time=Wed Dec 02 13:43:16 CST 2020, state=0, begin_time=Wed Dec 02 13:43:16 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021)
+2020-12-15 15:18:32.113 INFO  [http-nio-9001-exec-2] --> : ---------------------------------------------
+2020-12-15 15:18:38.283 INFO  [http-nio-9001-exec-1] --> : ---------------------------------------------
+2020-12-15 15:18:38.284 INFO  [http-nio-9001-exec-1] --> : 请求路径: http://127.0.0.1:9001/project/2  GET
+请求内容:{}
+2020-12-15 15:18:38.285 DEBUG [http-nio-9001-exec-1] --> : ==>  Preparing: select * from project where pid = ? 
+2020-12-15 15:18:38.286 DEBUG [http-nio-9001-exec-1] --> : ==> Parameters: 2(Integer)
+2020-12-15 15:18:38.298 DEBUG [http-nio-9001-exec-1] --> : <==      Total: 0
+2020-12-15 15:18:43.045 INFO  [http-nio-9001-exec-3] --> : ---------------------------------------------
+2020-12-15 15:18:43.046 INFO  [http-nio-9001-exec-3] --> : 请求路径: http://127.0.0.1:9001/project/1  GET
+请求内容:{}
+2020-12-15 15:18:43.047 DEBUG [http-nio-9001-exec-3] --> : ==>  Preparing: select * from project where pid = ? 
+2020-12-15 15:18:43.047 DEBUG [http-nio-9001-exec-3] --> : ==> Parameters: 1(Integer)
+2020-12-15 15:18:43.059 DEBUG [http-nio-9001-exec-3] --> : <==      Total: 1
+2020-12-15 15:18:43.060 INFO  [http-nio-9001-exec-3] --> : 请求结果：project(pid=1, p_name=项目名称1, creat_uid=null, remarks=null, create_time=null, state=null, begin_time=null, end_time=null)
+2020-12-15 15:18:43.061 INFO  [http-nio-9001-exec-3] --> : ---------------------------------------------
+2020-12-15 15:18:46.867 INFO  [http-nio-9001-exec-4] --> : ---------------------------------------------
+2020-12-15 15:18:46.867 INFO  [http-nio-9001-exec-4] --> : 请求路径: http://127.0.0.1:9001/project/0  GET
+请求内容:{}
+2020-12-15 15:18:46.868 DEBUG [http-nio-9001-exec-4] --> : ==>  Preparing: select * from project where pid = ? 
+2020-12-15 15:18:46.869 DEBUG [http-nio-9001-exec-4] --> : ==> Parameters: 0(Integer)
+2020-12-15 15:18:47.055 DEBUG [http-nio-9001-exec-4] --> : <==      Total: 0
+2020-12-15 15:27:32.497 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-0NNS7PI with PID 17636 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-15 15:27:32.503 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-15 15:27:32.504 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 15:27:33.942 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 15:27:33.947 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 15:27:34.016 INFO  [main] --> : Finished Spring Data repository scanning in 38ms. Found 0 Redis repository interfaces.
+2020-12-15 15:27:34.771 INFO  [main] --> : Bean 'redisCache' of type [club.codeqi.config.redisCache$$EnhancerBySpringCGLIB$$e051b067] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:27:34.922 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@345cf395' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:27:34.951 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:27:35.661 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-15 15:27:35.678 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-15 15:27:35.679 INFO  [main] --> : Starting service [Tomcat]
+2020-12-15 15:27:35.680 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-15 15:27:36.005 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-15 15:27:36.006 INFO  [main] --> : Root WebApplicationContext: initialization completed in 3402 ms
+2020-12-15 15:27:36.621 INFO  [main] --> : Init DruidDataSource
+2020-12-15 15:27:37.496 INFO  [main] --> : {dataSource-1} inited
+2020-12-15 15:27:39.333 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-15 15:27:39.353 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:27:39.366 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:27:39.391 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:27:39.834 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-15 15:27:39.839 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:27:39.843 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:27:39.856 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:27:39.930 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-15 15:27:39.934 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:27:39.938 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:27:39.951 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:27:40.411 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@365cdacf, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d21852b, org.springframework.security.web.header.HeaderWriterFilter@2f74900b, org.springframework.web.filter.CorsFilter@39bbd9e0, org.springframework.security.web.authentication.logout.LogoutFilter@5b5a4aed, club.codeqi.filter.JwtLoginFilter@303c55fa, club.codeqi.filter.JwtVerfyFilter@9efcd90, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b8ec001, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4baed682, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7eb200ce, org.springframework.security.web.session.SessionManagementFilter@2e26173, org.springframework.security.web.access.ExceptionTranslationFilter@1084f78c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@949c598]
+2020-12-15 15:27:41.342 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 15:27:42.800 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-15 15:27:42.859 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-15 15:27:42.889 INFO  [main] --> : Started project_jwt_authApplication in 11.235 seconds (JVM running for 13.05)
+2020-12-15 15:28:11.365 INFO  [http-nio-9001-exec-1] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 15:28:11.365 INFO  [http-nio-9001-exec-1] --> : Initializing Servlet 'dispatcherServlet'
+2020-12-15 15:28:11.390 INFO  [http-nio-9001-exec-1] --> : Completed initialization in 25 ms
+2020-12-15 15:28:19.097 INFO  [http-nio-9001-exec-2] --> : ---------------------------------------------
+2020-12-15 15:28:19.099 INFO  [http-nio-9001-exec-2] --> : 请求路径: http://127.0.0.1:9001/project/0  GET
+请求内容:{}
+2020-12-15 15:28:21.477 DEBUG [http-nio-9001-exec-2] --> : ==>  Preparing: select * from project where pid = ? 
+2020-12-15 15:28:21.522 DEBUG [http-nio-9001-exec-2] --> : ==> Parameters: 0(Integer)
+2020-12-15 15:28:21.584 DEBUG [http-nio-9001-exec-2] --> : <==      Total: 0
+2020-12-15 15:29:38.801 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-0NNS7PI with PID 15132 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-15 15:29:38.805 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-15 15:29:38.806 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 15:29:40.451 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 15:29:40.457 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 15:29:40.526 INFO  [main] --> : Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+2020-12-15 15:29:41.426 INFO  [main] --> : Bean 'redisCache' of type [club.codeqi.config.redisCache$$EnhancerBySpringCGLIB$$312468c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:29:41.582 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3cd59ef5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:29:41.607 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:29:42.312 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-15 15:29:42.333 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-15 15:29:42.334 INFO  [main] --> : Starting service [Tomcat]
+2020-12-15 15:29:42.335 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-15 15:29:42.677 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-15 15:29:42.678 INFO  [main] --> : Root WebApplicationContext: initialization completed in 3789 ms
+2020-12-15 15:29:43.210 INFO  [main] --> : Init DruidDataSource
+2020-12-15 15:29:43.995 INFO  [main] --> : {dataSource-1} inited
+2020-12-15 15:29:45.813 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-15 15:29:45.832 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:29:45.847 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:29:45.867 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:29:46.268 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-15 15:29:46.272 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:29:46.277 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:29:46.292 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:29:46.384 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-15 15:29:46.387 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:29:46.392 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:29:46.404 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:29:46.733 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@594d9f07, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e7157c7, org.springframework.security.web.header.HeaderWriterFilter@3811510, org.springframework.web.filter.CorsFilter@5e1dde44, org.springframework.security.web.authentication.logout.LogoutFilter@118dcbbd, club.codeqi.filter.JwtLoginFilter@5befbac1, club.codeqi.filter.JwtVerfyFilter@5e9f73b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22d9bc14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e26173, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a565afb, org.springframework.security.web.session.SessionManagementFilter@18539cb1, org.springframework.security.web.access.ExceptionTranslationFilter@31b7d869, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7cf78c85]
+2020-12-15 15:29:47.511 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 15:29:48.429 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-15 15:29:48.464 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-15 15:29:48.488 INFO  [main] --> : Started project_jwt_authApplication in 10.607 seconds (JVM running for 12.565)
+2020-12-15 15:29:50.177 INFO  [http-nio-9001-exec-1] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 15:29:50.178 INFO  [http-nio-9001-exec-1] --> : Initializing Servlet 'dispatcherServlet'
+2020-12-15 15:29:50.209 INFO  [http-nio-9001-exec-1] --> : Completed initialization in 31 ms
+2020-12-15 15:29:50.612 INFO  [http-nio-9001-exec-1] --> : ---------------------------------------------
+2020-12-15 15:29:50.614 INFO  [http-nio-9001-exec-1] --> : 请求路径: http://127.0.0.1:9001/projects  GET
+请求内容:{}
+2020-12-15 15:29:51.828 DEBUG [http-nio-9001-exec-1] --> : ==>  Preparing: SELECT count(0) FROM project 
+2020-12-15 15:29:51.873 DEBUG [http-nio-9001-exec-1] --> : ==> Parameters: 
+2020-12-15 15:29:52.063 DEBUG [http-nio-9001-exec-1] --> : <==      Total: 1
+2020-12-15 15:29:52.069 DEBUG [http-nio-9001-exec-1] --> : ==>  Preparing: SELECT pid,p_name,creat_uid,remarks,create_time,state,begin_time,end_time FROM project LIMIT ? 
+2020-12-15 15:29:52.072 DEBUG [http-nio-9001-exec-1] --> : ==> Parameters: 10(Integer)
+2020-12-15 15:29:52.100 DEBUG [http-nio-9001-exec-1] --> : <==      Total: 10
+2020-12-15 15:29:52.104 INFO  [http-nio-9001-exec-1] --> : 请求结果：PageInfo{pageNum=1, pageSize=10, size=10, startRow=1, endRow=10, total=12, pages=2, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=12, pages=2, reasonable=false, pageSizeZero=false}[project(pid=1, p_name=项目名称1, creat_uid=null, remarks=null, create_time=null, state=null, begin_time=null, end_time=null), project(pid=3, p_name=项目名称2, creat_uid=0, remarks=, create_time=Wed Dec 02 13:43:16 CST 2020, state=0, begin_time=Wed Dec 02 13:43:16 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=4, p_name=项目名称3, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:27 CST 2020, state=0, begin_time=Mon Dec 07 21:41:27 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=5, p_name=项目名称4, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=6, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=7, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=8, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=9, p_name=项目名称9, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=10, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021), project(pid=11, p_name=项目名称, creat_uid=0, remarks=, create_time=Mon Dec 07 21:41:28 CST 2020, state=0, begin_time=Mon Dec 07 21:41:28 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021)], prePage=0, nextPage=2, isFirstPage=true, isLastPage=false, hasPreviousPage=false, hasNextPage=true, navigatePages=8, navigateFirstPage=1, navigateLastPage=2, navigatepageNums=[1, 2]}
+2020-12-15 15:29:52.105 INFO  [http-nio-9001-exec-1] --> : ---------------------------------------------
+2020-12-15 15:30:19.795 INFO  [http-nio-9001-exec-3] --> : ---------------------------------------------
+2020-12-15 15:30:19.795 INFO  [http-nio-9001-exec-3] --> : 请求路径: http://127.0.0.1:9001/project/98  GET
+请求内容:{}
+2020-12-15 15:30:19.800 DEBUG [http-nio-9001-exec-3] --> : ==>  Preparing: select * from project where pid = ? 
+2020-12-15 15:30:19.801 DEBUG [http-nio-9001-exec-3] --> : ==> Parameters: 98(Integer)
+2020-12-15 15:30:19.816 DEBUG [http-nio-9001-exec-3] --> : <==      Total: 0
+2020-12-15 15:32:17.568 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-0NNS7PI with PID 17092 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-15 15:32:17.576 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-15 15:32:17.578 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 15:32:19.039 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 15:32:19.043 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 15:32:19.115 INFO  [main] --> : Finished Spring Data repository scanning in 39ms. Found 0 Redis repository interfaces.
+2020-12-15 15:32:19.980 INFO  [main] --> : Bean 'redisCache' of type [club.codeqi.config.redisCache$$EnhancerBySpringCGLIB$$dbaf2e86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:32:20.092 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@14379273' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:32:20.106 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 15:32:20.816 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-15 15:32:20.835 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-15 15:32:20.836 INFO  [main] --> : Starting service [Tomcat]
+2020-12-15 15:32:20.837 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-15 15:32:21.146 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-15 15:32:21.146 INFO  [main] --> : Root WebApplicationContext: initialization completed in 3467 ms
+2020-12-15 15:32:21.545 INFO  [main] --> : Init DruidDataSource
+2020-12-15 15:32:22.083 INFO  [main] --> : {dataSource-1} inited
+2020-12-15 15:32:23.640 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-15 15:32:23.660 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:32:23.673 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:32:23.700 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:32:24.082 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-15 15:32:24.088 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:32:24.095 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:32:24.110 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:32:24.208 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-15 15:32:24.211 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 15:32:24.215 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 15:32:24.227 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 15:32:24.571 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@663f237a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7be2f29a, org.springframework.security.web.header.HeaderWriterFilter@31120021, org.springframework.web.filter.CorsFilter@60d40ff4, org.springframework.security.web.authentication.logout.LogoutFilter@53e76c11, club.codeqi.filter.JwtLoginFilter@5d7399f9, club.codeqi.filter.JwtVerfyFilter@49a6f486, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c2a027c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3458eca5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14fded9d, org.springframework.security.web.session.SessionManagementFilter@58606c91, org.springframework.security.web.access.ExceptionTranslationFilter@3382cf68, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52a33c3f]
+2020-12-15 15:32:25.507 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 15:32:26.784 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-15 15:32:26.830 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-15 15:32:26.854 INFO  [main] --> : Started project_jwt_authApplication in 10.222 seconds (JVM running for 12.213)
+2020-12-15 15:32:34.583 INFO  [http-nio-9001-exec-1] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 15:32:34.583 INFO  [http-nio-9001-exec-1] --> : Initializing Servlet 'dispatcherServlet'
+2020-12-15 15:32:34.614 INFO  [http-nio-9001-exec-1] --> : Completed initialization in 30 ms
+2020-12-15 15:32:35.036 INFO  [http-nio-9001-exec-1] --> : ---------------------------------------------
+2020-12-15 15:32:35.039 INFO  [http-nio-9001-exec-1] --> : 请求路径: http://127.0.0.1:9001/project/98  GET
+请求内容:{}
+2020-12-15 15:32:35.636 DEBUG [http-nio-9001-exec-1] --> : ==>  Preparing: select * from project where pid = ? 
+2020-12-15 15:32:35.680 DEBUG [http-nio-9001-exec-1] --> : ==> Parameters: 98(Integer)
+2020-12-15 15:32:35.722 DEBUG [http-nio-9001-exec-1] --> : <==      Total: 0
+2020-12-15 15:32:35.726 ERROR [http-nio-9001-exec-1] --> : null
+2020-12-15 15:32:51.182 INFO  [http-nio-9001-exec-2] --> : ---------------------------------------------
+2020-12-15 15:32:51.183 INFO  [http-nio-9001-exec-2] --> : 请求路径: http://127.0.0.1:9001/project/3  GET
+请求内容:{}
+2020-12-15 15:32:51.185 DEBUG [http-nio-9001-exec-2] --> : ==>  Preparing: select * from project where pid = ? 
+2020-12-15 15:32:51.186 DEBUG [http-nio-9001-exec-2] --> : ==> Parameters: 3(Integer)
+2020-12-15 15:32:51.203 DEBUG [http-nio-9001-exec-2] --> : <==      Total: 1
+2020-12-15 15:32:51.205 INFO  [http-nio-9001-exec-2] --> : 请求结果：project(pid=3, p_name=项目名称2, creat_uid=0, remarks=, create_time=Wed Dec 02 13:43:16 CST 2020, state=0, begin_time=Wed Dec 02 13:43:16 CST 2020, end_time=Sun Jan 10 12:00:00 CST 2021)
+2020-12-15 15:32:51.205 INFO  [http-nio-9001-exec-2] --> : ---------------------------------------------

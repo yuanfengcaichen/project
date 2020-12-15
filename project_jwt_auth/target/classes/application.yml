@@ -32,10 +32,6 @@ spring:
         max-idle: 10
         # 连接池中的最小空闲连接
         min-idle: 1
-#  cache:
-#    redis:
-#      time-to-live: 2000
-#    cache-names: users
 
 logging:
   level:
