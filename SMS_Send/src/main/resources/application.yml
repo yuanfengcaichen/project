@@ -1,0 +1,48 @@
+server:
+  port: 9002
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://pipigo.club:3306/product?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: 1qaz
+  # redis配置
+  redis:
+    # Redis数据库索引（默认为0）
+    database: 1
+    # Redis服务器地址
+    host: 127.0.0.1
+    # Redis服务器连接端口
+    port: 6379
+    # Redis服务器连接密码（默认为空）
+    # password:
+    # 连接超时时间（毫秒）
+    timeout: 1000ms
+    expire: 200 #自定义缓存过期时间
+    lettuce:
+      pool:
+        # 连接池最大连接数
+        max-active: 200
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1ms
+        # 连接池中的最大空闲连接
+        max-idle: 10
+        # 连接池中的最小空闲连接
+        min-idle: 1
+
+logging:
+  level:
+    club.codeqi: debug
+  file:
+    path: ./logs
+    name: ${logging.file.path}/%d{yyyy_MM}/%d{yyyy_MM_dd}/%d{yyyy_MM_dd_HH}(%i).log
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+rsa:
+  key:
+    pubKeyFile: E:\ImportantPlan\项目管理\project\gengerateKey\id_key_rsa.pub

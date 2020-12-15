@@ -1,0 +1,876 @@
+2020-12-15 21:00:21.410 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-5NPPL9S with PID 6732 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by Administrator in E:\ImportantPlan\项目管理\project)
+2020-12-15 21:00:21.414 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 21:00:22.291 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 21:00:22.293 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 21:00:22.328 INFO  [main] --> : Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2020-12-15 21:00:22.731 WARN  [main] --> : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCache': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.expire' in value "${spring.redis.expire}"
+2020-12-15 21:00:22.740 INFO  [main] --> : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-15 21:00:22.753 ERROR [main] --> : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCache': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.expire' in value "${spring.redis.expire}"
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:241)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:723)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:536)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at club.codeqi.project_jwt_authApplication.main(project_jwt_authApplication.java:13)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCache': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.expire' in value "${spring.redis.expire}"
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:690)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:505)
+	... 15 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCache': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.expire' in value "${spring.redis.expire}"
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCache': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.expire' in value "${spring.redis.expire}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:723)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:505)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCache': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.expire' in value "${spring.redis.expire}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1489)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1265)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:715)
+	... 74 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.expire' in value "${spring.redis.expire}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:918)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 88 common frames omitted
+2020-12-15 21:01:40.421 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-5NPPL9S with PID 2012 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by Administrator in E:\ImportantPlan\项目管理\project)
+2020-12-15 21:01:40.424 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 21:01:41.256 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 21:01:41.259 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 21:01:41.293 INFO  [main] --> : Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-12-15 21:01:41.709 WARN  [main] --> : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCache': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.port' in value "${spring.redis.port}"
+2020-12-15 21:01:41.719 INFO  [main] --> : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-15 21:01:41.730 ERROR [main] --> : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCache': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.port' in value "${spring.redis.port}"
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:241)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:723)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:536)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at club.codeqi.project_jwt_authApplication.main(project_jwt_authApplication.java:13)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCache': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.port' in value "${spring.redis.port}"
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:690)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:505)
+	... 15 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCache': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.port' in value "${spring.redis.port}"
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCache': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.port' in value "${spring.redis.port}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:723)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:505)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisCache': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.port' in value "${spring.redis.port}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1489)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1265)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:715)
+	... 74 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.port' in value "${spring.redis.port}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:918)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 88 common frames omitted
+2020-12-15 21:26:56.833 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-5NPPL9S with PID 12952 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by Administrator in E:\ImportantPlan\项目管理\project)
+2020-12-15 21:26:56.838 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-15 21:26:56.838 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 21:26:57.745 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 21:26:57.748 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 21:26:57.789 INFO  [main] --> : Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2020-12-15 21:26:58.234 INFO  [main] --> : Bean 'redisCache' of type [club.codeqi.config.redisCache$$EnhancerBySpringCGLIB$$8da4a419] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:26:58.296 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@69d6a7cd' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:26:58.307 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:26:58.629 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-15 21:26:58.639 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:26:58.640 INFO  [main] --> : Starting service [Tomcat]
+2020-12-15 21:26:58.640 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-15 21:26:58.799 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-15 21:26:58.799 INFO  [main] --> : Root WebApplicationContext: initialization completed in 1904 ms
+2020-12-15 21:26:59.075 INFO  [main] --> : Init DruidDataSource
+2020-12-15 21:26:59.440 INFO  [main] --> : {dataSource-1} inited
+2020-12-15 21:27:00.452 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-15 21:27:00.461 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 21:27:00.466 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 21:27:00.477 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 21:27:00.704 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-15 21:27:00.706 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 21:27:00.709 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 21:27:00.722 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 21:27:00.763 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-15 21:27:00.765 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-15 21:27:00.766 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-15 21:27:00.771 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-15 21:27:00.983 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1220ef43, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e5aafc6, org.springframework.security.web.header.HeaderWriterFilter@17aa8a11, org.springframework.web.filter.CorsFilter@6ab4a5b, org.springframework.security.web.authentication.logout.LogoutFilter@7e9f2c32, club.codeqi.filter.JwtLoginFilter@1a8b81e8, club.codeqi.filter.JwtVerfyFilter@234cff57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5583098b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@717d7587, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e8507f1, org.springframework.security.web.session.SessionManagementFilter@18a25bbd, org.springframework.security.web.access.ExceptionTranslationFilter@57c00115, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@360e9c06]
+2020-12-15 21:27:01.483 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 21:27:02.218 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:27:02.242 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-15 21:27:02.253 INFO  [main] --> : Started project_jwt_authApplication in 6.128 seconds (JVM running for 7.518)
+2020-12-15 21:27:08.670 INFO  [SpringContextShutdownHook] --> : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-15 21:27:08.693 INFO  [SpringContextShutdownHook] --> : {dataSource-1} closed
+2020-12-15 21:52:30.106 INFO  [main] --> : Starting SMS_SendApplication on DESKTOP-5NPPL9S with PID 8120 (E:\ImportantPlan\项目管理\project\SMS_Send\target\classes started by Administrator in E:\ImportantPlan\项目管理\project)
+2020-12-15 21:52:30.110 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-15 21:52:30.110 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 21:52:30.993 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 21:52:30.997 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 21:52:31.031 INFO  [main] --> : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-12-15 21:52:31.181 WARN  [main] --> : No MyBatis mapper was found in '[club.codeqi]' package. Please check your configuration.
+2020-12-15 21:52:31.563 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@67507df' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:52:31.576 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:52:31.982 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-15 21:52:31.993 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:52:31.993 INFO  [main] --> : Starting service [Tomcat]
+2020-12-15 21:52:31.994 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-15 21:52:32.151 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-15 21:52:32.152 INFO  [main] --> : Root WebApplicationContext: initialization completed in 1986 ms
+2020-12-15 21:52:32.561 INFO  [main] --> : 
+
+Using generated security password: 69807caa-2859-4c4e-b294-995c731e047e
+
+2020-12-15 21:52:32.686 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6403a4a5, org.springframework.security.web.context.SecurityContextPersistenceFilter@17222c11, org.springframework.security.web.header.HeaderWriterFilter@7f5fcfe9, org.springframework.web.filter.CorsFilter@33feda48, org.springframework.security.web.authentication.logout.LogoutFilter@72557746, club.codeqi.filter.JwtVerfyFilter@3dbd7107, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25974207, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3830f918, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a6c0f38, org.springframework.security.web.session.SessionManagementFilter@44598ef7, org.springframework.security.web.access.ExceptionTranslationFilter@2f9dda71, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6839203b]
+2020-12-15 21:52:33.273 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 21:52:33.696 INFO  [main] --> : Init DruidDataSource
+2020-12-15 21:52:33.790 INFO  [main] --> : {dataSource-1} inited
+2020-12-15 21:52:35.248 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:52:35.276 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-15 21:52:35.286 INFO  [main] --> : Started SMS_SendApplication in 5.817 seconds (JVM running for 8.84)
+2020-12-15 21:56:47.330 INFO  [SpringContextShutdownHook] --> : {dataSource-1} closed
+2020-12-15 21:56:47.331 INFO  [SpringContextShutdownHook] --> : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-15 21:56:56.422 INFO  [main] --> : Starting SMS_SendApplication on DESKTOP-5NPPL9S with PID 4328 (E:\ImportantPlan\项目管理\project\SMS_Send\target\classes started by Administrator in E:\ImportantPlan\项目管理\project)
+2020-12-15 21:56:56.426 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-15 21:56:56.426 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 21:56:57.428 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 21:56:57.431 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 21:56:57.464 INFO  [main] --> : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-12-15 21:56:57.592 WARN  [main] --> : No MyBatis mapper was found in '[club.codeqi]' package. Please check your configuration.
+2020-12-15 21:56:58.203 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2db4ad1' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:56:58.218 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:56:58.646 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-15 21:56:58.657 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:56:58.657 INFO  [main] --> : Starting service [Tomcat]
+2020-12-15 21:56:58.658 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-15 21:56:58.812 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-15 21:56:58.813 INFO  [main] --> : Root WebApplicationContext: initialization completed in 2308 ms
+2020-12-15 21:56:59.259 INFO  [main] --> : 
+
+Using generated security password: 3617e2a5-cc85-4828-abab-1a7a3e8214c9
+
+2020-12-15 21:56:59.384 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31b0f02, org.springframework.security.web.context.SecurityContextPersistenceFilter@7889b4b9, org.springframework.security.web.header.HeaderWriterFilter@2744dcae, org.springframework.web.filter.CorsFilter@24043ec5, org.springframework.security.web.authentication.logout.LogoutFilter@62d40e31, club.codeqi.filter.JwtVerfyFilter@19ae2ee5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12952aff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@110e9982, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44b940a2, org.springframework.security.web.session.SessionManagementFilter@4fa86cb8, org.springframework.security.web.access.ExceptionTranslationFilter@54c425b1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14c99bf6]
+2020-12-15 21:56:59.963 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 21:57:00.403 INFO  [main] --> : Init DruidDataSource
+2020-12-15 21:57:00.525 INFO  [main] --> : {dataSource-1} inited
+2020-12-15 21:57:03.003 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:57:03.037 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-15 21:57:03.050 INFO  [main] --> : Started SMS_SendApplication in 7.571 seconds (JVM running for 9.426)
+2020-12-15 21:57:31.411 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-5NPPL9S with PID 920 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by Administrator in E:\ImportantPlan\项目管理\project)
+2020-12-15 21:57:31.415 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-15 21:57:31.415 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 21:57:32.280 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 21:57:32.283 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 21:57:32.316 INFO  [main] --> : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-12-15 21:57:32.790 INFO  [main] --> : Bean 'redisCache' of type [club.codeqi.config.redisCache$$EnhancerBySpringCGLIB$$a42833b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:57:32.862 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@221a2068' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:57:32.875 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:57:33.275 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-15 21:57:33.286 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:57:33.287 INFO  [main] --> : Starting service [Tomcat]
+2020-12-15 21:57:33.288 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-15 21:57:33.439 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-15 21:57:33.440 INFO  [main] --> : Root WebApplicationContext: initialization completed in 1972 ms
+2020-12-15 21:57:33.769 INFO  [main] --> : Init DruidDataSource
+2020-12-15 21:57:34.086 INFO  [main] --> : {dataSource-1} inited
+2020-12-15 21:57:35.026 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-15 21:57:35.331 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-15 21:57:35.384 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-15 21:57:35.627 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c995c5d, org.springframework.security.web.context.SecurityContextPersistenceFilter@3afca2c, org.springframework.security.web.header.HeaderWriterFilter@987a0bb, org.springframework.web.filter.CorsFilter@2484dbb7, org.springframework.security.web.authentication.logout.LogoutFilter@44641d6c, club.codeqi.filter.JwtLoginFilter@203b953c, club.codeqi.filter.JwtVerfyFilter@730bea0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39f42d0e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@660b1a9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41a16eb3, org.springframework.security.web.session.SessionManagementFilter@5a7b6b75, org.springframework.security.web.access.ExceptionTranslationFilter@ee96866, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77fc19cf]
+2020-12-15 21:57:36.157 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 21:57:36.963 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:57:36.980 WARN  [main] --> : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9001 is already in use
+2020-12-15 21:57:36.981 INFO  [main] --> : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-15 21:57:37.008 INFO  [main] --> : {dataSource-1} closed
+2020-12-15 21:57:37.011 INFO  [main] --> : Pausing ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:57:37.011 INFO  [main] --> : Stopping service [Tomcat]
+2020-12-15 21:57:37.016 INFO  [main] --> : Stopping ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:57:37.017 INFO  [main] --> : Destroying ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:57:37.024 INFO  [main] --> : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-15 21:57:37.030 ERROR [main] --> : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9001 or configure this application to listen on another port.
+
+2020-12-15 21:58:14.909 INFO  [SpringContextShutdownHook] --> : {dataSource-1} closed
+2020-12-15 21:58:14.909 INFO  [SpringContextShutdownHook] --> : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-15 21:58:19.559 INFO  [main] --> : Starting SMS_SendApplication on DESKTOP-5NPPL9S with PID 6504 (E:\ImportantPlan\项目管理\project\SMS_Send\target\classes started by Administrator in E:\ImportantPlan\项目管理\project)
+2020-12-15 21:58:19.562 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-15 21:58:19.563 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 21:58:20.404 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 21:58:20.416 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 21:58:20.448 INFO  [main] --> : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-12-15 21:58:20.569 WARN  [main] --> : No MyBatis mapper was found in '[club.codeqi]' package. Please check your configuration.
+2020-12-15 21:58:20.937 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3a2d3909' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:58:20.950 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:58:21.352 INFO  [main] --> : Tomcat initialized with port(s): 9002 (http)
+2020-12-15 21:58:21.363 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9002"]
+2020-12-15 21:58:21.363 INFO  [main] --> : Starting service [Tomcat]
+2020-12-15 21:58:21.364 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-15 21:58:21.523 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-15 21:58:21.523 INFO  [main] --> : Root WebApplicationContext: initialization completed in 1908 ms
+2020-12-15 21:58:21.925 INFO  [main] --> : 
+
+Using generated security password: fb3cf3ba-4782-40f5-9fe1-ce6bc2710601
+
+2020-12-15 21:58:22.037 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@798cb6d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f054f70, org.springframework.security.web.header.HeaderWriterFilter@64518270, org.springframework.web.filter.CorsFilter@4aa2877c, org.springframework.security.web.authentication.logout.LogoutFilter@437bd805, club.codeqi.filter.JwtVerfyFilter@42679fc2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27b337bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65be88ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e50df2e, org.springframework.security.web.session.SessionManagementFilter@3cdff901, org.springframework.security.web.access.ExceptionTranslationFilter@35eee641, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ef31f71]
+2020-12-15 21:58:22.571 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 21:58:22.974 INFO  [main] --> : Init DruidDataSource
+2020-12-15 21:58:23.086 INFO  [main] --> : {dataSource-1} inited
+2020-12-15 21:58:24.590 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9002"]
+2020-12-15 21:58:24.622 INFO  [main] --> : Tomcat started on port(s): 9002 (http) with context path ''
+2020-12-15 21:58:24.634 INFO  [main] --> : Started SMS_SendApplication in 5.941 seconds (JVM running for 7.363)
+2020-12-15 21:58:53.365 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-5NPPL9S with PID 864 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by Administrator in E:\ImportantPlan\项目管理\project)
+2020-12-15 21:58:53.369 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-15 21:58:53.369 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-15 21:58:54.236 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-15 21:58:54.239 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-15 21:58:54.273 INFO  [main] --> : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-12-15 21:58:54.766 INFO  [main] --> : Bean 'redisCache' of type [club.codeqi.config.redisCache$$EnhancerBySpringCGLIB$$3866c13d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:58:54.847 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4694f434' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:58:54.861 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 21:58:55.258 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-15 21:58:55.270 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:58:55.271 INFO  [main] --> : Starting service [Tomcat]
+2020-12-15 21:58:55.271 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-15 21:58:55.432 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-15 21:58:55.432 INFO  [main] --> : Root WebApplicationContext: initialization completed in 2007 ms
+2020-12-15 21:58:55.770 INFO  [main] --> : Init DruidDataSource
+2020-12-15 21:58:56.102 INFO  [main] --> : {dataSource-1} inited
+2020-12-15 21:58:56.974 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-15 21:58:57.275 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-15 21:58:57.328 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-15 21:58:57.586 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43e8f1c, org.springframework.security.web.context.SecurityContextPersistenceFilter@51424203, org.springframework.security.web.header.HeaderWriterFilter@237b2852, org.springframework.web.filter.CorsFilter@6ad6443, org.springframework.security.web.authentication.logout.LogoutFilter@147efd9, club.codeqi.filter.JwtLoginFilter@66a82a13, club.codeqi.filter.JwtVerfyFilter@675ec28b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@464aeb09, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b7d2d51, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11399548, org.springframework.security.web.session.SessionManagementFilter@4628a02b, org.springframework.security.web.access.ExceptionTranslationFilter@7e0f9528, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1515f782]
+2020-12-15 21:58:58.112 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 21:58:58.913 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-15 21:58:58.943 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-15 21:58:58.957 INFO  [main] --> : Started project_jwt_authApplication in 6.408 seconds (JVM running for 8.032)
+2020-12-15 21:59:34.171 INFO  [http-nio-9002-exec-1] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 21:59:34.171 INFO  [http-nio-9002-exec-1] --> : Initializing Servlet 'dispatcherServlet'
+2020-12-15 21:59:34.183 INFO  [http-nio-9002-exec-1] --> : Completed initialization in 12 ms
+2020-12-15 21:59:59.110 INFO  [http-nio-9001-exec-2] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 21:59:59.111 INFO  [http-nio-9001-exec-2] --> : Initializing Servlet 'dispatcherServlet'
+2020-12-15 21:59:59.125 INFO  [http-nio-9001-exec-2] --> : Completed initialization in 14 ms
+2020-12-15 21:59:59.147 DEBUG [http-nio-9001-exec-2] --> : Request is to process authentication
+2020-12-15 22:00:01.885 ERROR [http-nio-9001-exec-2] --> : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.RuntimeException: org.springframework.security.authentication.InternalAuthenticationServiceException: Invalid bound statement (not found): club.codeqi.bean.user.userMapper.findByName
+	at club.codeqi.filter.JwtLoginFilter.attemptAuthentication(JwtLoginFilter.java:55)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.security.authentication.InternalAuthenticationServiceException: Invalid bound statement (not found): club.codeqi.bean.user.userMapper.findByName
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at club.codeqi.filter.JwtLoginFilter.attemptAuthentication(JwtLoginFilter.java:39)
+	... 50 common frames omitted
+Caused by: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): club.codeqi.bean.user.userMapper.findByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.<init>(MybatisMapperMethod.java:51)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.lambda$cachedInvoker$0(MybatisMapperProxy.java:111)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at com.baomidou.mybatisplus.core.toolkit.CollectionUtils.computeIfAbsent(CollectionUtils.java:117)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.cachedInvoker(MybatisMapperProxy.java:98)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy87.findByName(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:366)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:421)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:346)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy89.findByName(Unknown Source)
+	at club.codeqi.bean.user.Impl.UserserviceImpl.loadUserByUsername(UserserviceImpl.java:20)
+	at club.codeqi.bean.user.Impl.UserserviceImpl$$FastClassBySpringCGLIB$$46c49292.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at club.codeqi.bean.user.Impl.UserserviceImpl$$EnhancerBySpringCGLIB$$4e70a3b6.loadUserByUsername(<generated>)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 53 common frames omitted
+2020-12-15 22:00:01.942 ERROR [http-nio-9001-exec-2] --> : Servlet.service() for servlet [dispatcherServlet] threw exception
+java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.apache.catalina.connector.Response.getOutputStream(Response.java:549)
+	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
+	at javax.servlet.ServletResponseWrapper.getOutputStream(ServletResponseWrapper.java:105)
+	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:84)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:303)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:287)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:580)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:516)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:388)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-15 22:00:01.943 ERROR [http-nio-9001-exec-2] --> : Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:580)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:516)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:388)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.apache.catalina.connector.Response.getOutputStream(Response.java:549)
+	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
+	at javax.servlet.ServletResponseWrapper.getOutputStream(ServletResponseWrapper.java:105)
+	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:84)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:303)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:287)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 38 common frames omitted
+2020-12-15 22:00:15.055 DEBUG [http-nio-9001-exec-4] --> : Request is to process authentication
+2020-12-15 22:00:15.086 ERROR [http-nio-9001-exec-4] --> : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.RuntimeException: org.springframework.security.authentication.InternalAuthenticationServiceException: Invalid bound statement (not found): club.codeqi.bean.user.userMapper.findByName
+	at club.codeqi.filter.JwtLoginFilter.attemptAuthentication(JwtLoginFilter.java:55)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.security.authentication.InternalAuthenticationServiceException: Invalid bound statement (not found): club.codeqi.bean.user.userMapper.findByName
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at club.codeqi.filter.JwtLoginFilter.attemptAuthentication(JwtLoginFilter.java:39)
+	... 50 common frames omitted
+Caused by: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): club.codeqi.bean.user.userMapper.findByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.<init>(MybatisMapperMethod.java:51)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.lambda$cachedInvoker$0(MybatisMapperProxy.java:111)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at com.baomidou.mybatisplus.core.toolkit.CollectionUtils.computeIfAbsent(CollectionUtils.java:117)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.cachedInvoker(MybatisMapperProxy.java:98)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy87.findByName(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:366)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:421)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:346)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy89.findByName(Unknown Source)
+	at club.codeqi.bean.user.Impl.UserserviceImpl.loadUserByUsername(UserserviceImpl.java:20)
+	at club.codeqi.bean.user.Impl.UserserviceImpl$$FastClassBySpringCGLIB$$46c49292.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at club.codeqi.bean.user.Impl.UserserviceImpl$$EnhancerBySpringCGLIB$$4e70a3b6.loadUserByUsername(<generated>)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 53 common frames omitted
+2020-12-15 22:00:15.088 ERROR [http-nio-9001-exec-4] --> : Servlet.service() for servlet [dispatcherServlet] threw exception
+java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.apache.catalina.connector.Response.getOutputStream(Response.java:549)
+	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
+	at javax.servlet.ServletResponseWrapper.getOutputStream(ServletResponseWrapper.java:105)
+	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:84)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:303)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:287)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:580)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:516)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:388)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-15 22:00:15.089 ERROR [http-nio-9001-exec-4] --> : Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:580)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:516)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:388)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.apache.catalina.connector.Response.getOutputStream(Response.java:549)
+	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210)
+	at javax.servlet.ServletResponseWrapper.getOutputStream(ServletResponseWrapper.java:105)
+	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:84)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:303)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:287)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 38 common frames omitted
+2020-12-15 22:00:57.088 INFO  [SpringContextShutdownHook] --> : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-15 22:00:57.217 INFO  [SpringContextShutdownHook] --> : {dataSource-1} closed
+2020-12-15 22:08:13.789 INFO  [SpringContextShutdownHook] --> : {dataSource-1} closed
+2020-12-15 22:08:13.790 INFO  [SpringContextShutdownHook] --> : Shutting down ExecutorService 'applicationTaskExecutor'
