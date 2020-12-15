@@ -22,7 +22,7 @@ import static java.util.stream.Collectors.joining;
 
 @Aspect
 @Component
-public class userloginAspect {
+public class ControllerAspect {
 
     public static final Logger LOGGER = LoggerFactory.getLogger("Request请求记录");
 
