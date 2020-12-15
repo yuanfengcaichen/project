@@ -1,0 +1,48 @@
+2020-12-16 00:04:35.184 INFO  [main] --> : Starting SMS_SendApplication on DESKTOP-5NPPL9S with PID 11796 (E:\ImportantPlan\项目管理\project\SMS_Send\target\classes started by Administrator in E:\ImportantPlan\项目管理\project)
+2020-12-16 00:04:35.188 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-16 00:04:35.188 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-16 00:04:35.948 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-16 00:04:35.950 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-16 00:04:35.974 INFO  [main] --> : Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-12-16 00:04:36.082 WARN  [main] --> : No MyBatis mapper was found in '[club.codeqi]' package. Please check your configuration.
+2020-12-16 00:04:36.409 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3c0036b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-16 00:04:36.422 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-16 00:04:36.767 INFO  [main] --> : Tomcat initialized with port(s): 9002 (http)
+2020-12-16 00:04:36.778 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9002"]
+2020-12-16 00:04:36.779 INFO  [main] --> : Starting service [Tomcat]
+2020-12-16 00:04:36.780 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-16 00:04:36.901 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-16 00:04:36.901 INFO  [main] --> : Root WebApplicationContext: initialization completed in 1670 ms
+2020-12-16 00:04:37.228 INFO  [main] --> : 
+
+Using generated security password: 8cd33838-b1e1-409e-8243-f69d56ec7be1
+
+2020-12-16 00:04:37.391 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ef6fd7f, org.springframework.security.web.context.SecurityContextPersistenceFilter@216e0771, org.springframework.security.web.header.HeaderWriterFilter@711d1a52, org.springframework.web.filter.CorsFilter@1e530163, org.springframework.security.web.authentication.logout.LogoutFilter@1ba359bd, club.codeqi.filter.JwtVerfyFilter@5633ed82, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fcc6023, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60cf62ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@767191b1, org.springframework.security.web.session.SessionManagementFilter@4068102e, org.springframework.security.web.access.ExceptionTranslationFilter@336206d8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71904469]
+2020-12-16 00:04:37.627 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-16 00:04:37.999 INFO  [main] --> : Init DruidDataSource
+2020-12-16 00:04:38.076 INFO  [main] --> : {dataSource-1} inited
+2020-12-16 00:04:39.657 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9002"]
+2020-12-16 00:04:39.682 INFO  [main] --> : Tomcat started on port(s): 9002 (http) with context path ''
+2020-12-16 00:04:39.692 INFO  [main] --> : Started SMS_SendApplication in 5.146 seconds (JVM running for 6.351)
+2020-12-16 00:06:22.344 INFO  [http-nio-9002-exec-2] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-16 00:06:22.344 INFO  [http-nio-9002-exec-2] --> : Initializing Servlet 'dispatcherServlet'
+2020-12-16 00:06:22.357 INFO  [http-nio-9002-exec-2] --> : Completed initialization in 12 ms
+2020-12-16 00:06:22.531 WARN  [http-nio-9002-exec-2] --> : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2020-12-16 00:07:34.999 INFO  [http-nio-9002-exec-4] --> : -------------------请求开始--------------------------
+2020-12-16 00:07:35.001 INFO  [http-nio-9002-exec-4] --> : 请求路径: http://localhost:9002/sendmsg  POST
+请求内容:{phone:17721330304, code:测试消息}
+2020-12-16 00:07:35.926 INFO  [http-nio-9002-exec-4] --> : {"result":1038,"errmsg":"\u9A8C\u8BC1\u7801\u6A21\u677F\u53C2\u6570\u683C\u5F0F\u9519\u8BEF","ext":"","isocode":"CN"}
+2020-12-16 00:07:35.926 INFO  [http-nio-9002-exec-4] --> : 请求结果：{}
+2020-12-16 00:07:35.926 INFO  [http-nio-9002-exec-4] --> : --------------------请求结束-------------------------
+2020-12-16 00:08:54.688 INFO  [http-nio-9002-exec-7] --> : -------------------请求开始--------------------------
+2020-12-16 00:08:54.688 INFO  [http-nio-9002-exec-7] --> : 请求路径: http://localhost:9002/sendmsg  POST
+请求内容:{phone:17721330304, code:123456}
+2020-12-16 00:08:54.977 INFO  [http-nio-9002-exec-7] --> : {"result":0,"errmsg":"OK","ext":"","sid":"8:LWHxtUc3ghkqI1LGgM320201216","fee":1,"isocode":"CN"}
+2020-12-16 00:08:54.977 INFO  [http-nio-9002-exec-7] --> : 请求结果：{}
+2020-12-16 00:08:54.977 INFO  [http-nio-9002-exec-7] --> : --------------------请求结束-------------------------
+2020-12-16 00:11:22.385 INFO  [http-nio-9002-exec-1] --> : -------------------请求开始--------------------------
+2020-12-16 00:11:22.386 INFO  [http-nio-9002-exec-1] --> : 请求路径: http://localhost:9002/sendmsg  POST
+请求内容:{phone:17721330304, code:test}
+2020-12-16 00:11:22.504 INFO  [http-nio-9002-exec-1] --> : {"result":1038,"errmsg":"\u9A8C\u8BC1\u7801\u6A21\u677F\u53C2\u6570\u683C\u5F0F\u9519\u8BEF","ext":"","isocode":"CN"}
+2020-12-16 00:11:22.505 INFO  [http-nio-9002-exec-1] --> : 请求结果：{}
+2020-12-16 00:11:22.505 INFO  [http-nio-9002-exec-1] --> : --------------------请求结束-------------------------
