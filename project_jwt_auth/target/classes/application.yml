@@ -34,7 +34,7 @@ spring:
         min-idle: 1
   #RabbitMQ配置
   rabbitmq:
-    host: 192.168.174.130
+    host: 192.168.244.131
     port: 5672
     username: admin
     password: admin
