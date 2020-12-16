@@ -29,18 +29,18 @@ public class JwtLoginAspect {
         SMS sms = new SMS();
         sms.setPhone("17721330304");
         sms.setCode("1216");
-        LOGGER.info("-------------AOP向消息队列发送短信开始-------------------");
+        LOGGER.info("===============AOP向消息队列发送短信开始===============");
         LOGGER.info("向消息队列中发送消息：消息队列: "+"hello"+", 消息内容: "+sms.toString());
         amqpTemplate.convertAndSend("hello",sms.toString());
         //1.开始
         try {
             // 2、执行时
             Object obj =  pjp.proceed();
-            LOGGER.info("--------------------AOP向消息队列发送短信结束-------------------------");
+            LOGGER.info("===============AOP向消息队列发送短信结束===============");
             return obj;
         } catch (Throwable e) {
             LOGGER.error(e.toString());// 3、发生异常时
-            LOGGER.error("--------------------AOP向消息队列发送短信结束-------------------------");
+            LOGGER.error("===============AOP向消息队列发送短信结束===============");
             throw e;
         }
 

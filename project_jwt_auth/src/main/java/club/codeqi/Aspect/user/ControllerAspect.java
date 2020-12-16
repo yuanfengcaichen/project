@@ -31,7 +31,7 @@ public class ControllerAspect {
 
     @Before("webLogProject()")
     public void beginRequest(JoinPoint joinPoint){
-        LOGGER.info("-------------------请求开始--------------------------");
+        LOGGER.info("--------------------请求开始--------------------");
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
         StringBuilder sb = new StringBuilder();
@@ -74,7 +74,7 @@ public class ControllerAspect {
     @AfterReturning(pointcut = "webLogProject()", returning = "ret")
     public void endRequest(Object ret) {
         LOGGER.info("请求结果：" + ret.toString());
-        LOGGER.info("--------------------请求结束-------------------------");
+        LOGGER.info("--------------------请求结束--------------------");
     }
 
     @Around("webLogProject()")
@@ -84,11 +84,11 @@ public class ControllerAspect {
             // 2、执行时
             Object obj =  pjp.proceed();
 //            LOGGER.info("请求结果：" + obj.toString());
-//            LOGGER.info("--------------------请求结束-------------------------");
+//            LOGGER.info("--------------------请求结束--------------------");
             return obj;
         } catch (Throwable e) {
             LOGGER.error(e.toString());// 3、发生异常时
-            LOGGER.error("--------------------请求结束-------------------------");
+            LOGGER.error("--------------------请求结束--------------------");
             throw e;
         }
     }
