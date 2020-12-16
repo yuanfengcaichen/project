@@ -1,5 +1,6 @@
 package club.codeqi.controller;
 
+import club.codeqi.Aspect.GetMsg;
 import club.codeqi.utils.JsonUtils;
 import com.github.qcloudsms.SmsSingleSender;
 import com.github.qcloudsms.SmsSingleSenderResult;
@@ -7,6 +8,7 @@ import com.github.qcloudsms.httpclient.HTTPException;
 import org.json.JSONException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
@@ -16,10 +18,17 @@ import java.util.Map;
 
 @RestController
 public class testController {
+    @Autowired
+    GetMsg getMsg;
     public static final Logger LOGGER = LoggerFactory.getLogger("Request请求记录");
     @GetMapping("/hello")
     public String test(){
         return "hello world";
+    }
+
+    @GetMapping("/getmsg")
+    public String getmsg(){
+        return "获取到的消息是：";
     }
 
     @GetMapping({"/sendmsg"})
