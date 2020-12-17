@@ -1,5 +1,6 @@
 package club.codeqi.Aspect.user;
 
+import club.codeqi.config.RabbitConfig;
 import club.codeqi.utils.JsonUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -32,7 +33,7 @@ public class JwtLoginAspect {
         sms.setCode("1011");
         LOGGER.info("===============AOP向消息队列发送短信开始===============");
         LOGGER.info("向消息队列中发送消息：消息队列: "+"hello"+", 消息内容: "+sms.toString());
-        amqpTemplate.convertAndSend("hello", JsonUtils.toString(sms));
+        amqpTemplate.convertAndSend(RabbitConfig.FANOUT_EXCHANGE, "", JsonUtils.toString(sms));
         //1.开始
         try {
             // 2、执行时

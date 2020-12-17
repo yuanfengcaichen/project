@@ -12,6 +12,7 @@
         <module>project_common</module>
         <module>project_jwt_auth</module>
         <module>SMS_Send</module>
+        <module>EMAIL_Send</module>
     </modules>
 
     <!-- SpringBoot -->

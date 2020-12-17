@@ -1,0 +1,21 @@
+server:
+  port: 9003
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  #RabbitMQ配置
+  rabbitmq:
+    host: 192.168.174.130
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /admin
+logging:
+  level:
+    club.codeqi: debug
+  file:
+    path: ./logs
+    name: ${logging.file.path}/%d{yyyy_MM}/%d{yyyy_MM_dd}/%d{yyyy_MM_dd_HH}(%i).log
+
+#pass: nitmcrmrqzychcea
