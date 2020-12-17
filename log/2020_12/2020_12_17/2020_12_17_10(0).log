@@ -1,0 +1,291 @@
+2020-12-17 10:06:36.398 INFO  [main] --> : Starting SMS_SendApplication on DESKTOP-0NNS7PI with PID 17504 (E:\ImportantPlan\项目管理\project\SMS_Send\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-17 10:06:36.407 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-17 10:06:36.408 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-17 10:06:38.247 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-17 10:06:38.252 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-17 10:06:38.321 INFO  [main] --> : Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2020-12-17 10:06:38.641 WARN  [main] --> : No MyBatis mapper was found in '[club.codeqi]' package. Please check your configuration.
+2020-12-17 10:06:39.437 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3047254d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:06:39.475 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:06:40.259 INFO  [main] --> : Tomcat initialized with port(s): 9002 (http)
+2020-12-17 10:06:40.279 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9002"]
+2020-12-17 10:06:40.280 INFO  [main] --> : Starting service [Tomcat]
+2020-12-17 10:06:40.281 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-17 10:06:40.610 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-17 10:06:40.611 INFO  [main] --> : Root WebApplicationContext: initialization completed in 4066 ms
+2020-12-17 10:06:41.673 INFO  [main] --> : 
+
+Using generated security password: f8a43c87-e354-4a63-80fb-a8f3afd8a584
+
+2020-12-17 10:06:41.934 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b306b9f, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d4e405e, org.springframework.security.web.header.HeaderWriterFilter@97d0c06, org.springframework.web.filter.CorsFilter@3936df72, org.springframework.security.web.authentication.logout.LogoutFilter@46349b95, club.codeqi.filter.JwtVerfyFilter@142213d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70972170, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d44a19, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@934b52f, org.springframework.security.web.session.SessionManagementFilter@23f3da8b, org.springframework.security.web.access.ExceptionTranslationFilter@36480b2d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@38ed139b]
+2020-12-17 10:06:42.483 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 10:06:43.449 INFO  [main] --> : Init DruidDataSource
+2020-12-17 10:06:43.655 INFO  [main] --> : {dataSource-1} inited
+2020-12-17 10:06:48.956 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9002"]
+2020-12-17 10:06:49.006 INFO  [main] --> : Tomcat started on port(s): 9002 (http) with context path ''
+2020-12-17 10:06:49.011 INFO  [main] --> : Attempting to connect to: [192.168.174.130:5672]
+2020-12-17 10:06:49.077 INFO  [main] --> : Created new connection: rabbitConnectionFactory#7944b8b4:0/SimpleConnection@3babcaed [delegate=amqp://admin@192.168.174.130:5672//admin, localPort= 61032]
+2020-12-17 10:06:49.206 INFO  [main] --> : Started SMS_SendApplication in 13.911 seconds (JVM running for 16.517)
+2020-12-17 10:06:55.850 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] --> : 接受到的消息是：{phone=19965412404, code=5678}
+2020-12-17 10:06:56.564 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] --> : 消息发送结果：{"result":1014,"errmsg":"package format error, sdkappid not have this tpl_id","ext":""}
+2020-12-17 10:07:23.269 INFO  [main] --> : Starting SMS_SendApplication on DESKTOP-0NNS7PI with PID 2776 (E:\ImportantPlan\项目管理\project\SMS_Send\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-17 10:07:23.276 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-17 10:07:23.276 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-17 10:07:25.066 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-17 10:07:25.070 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-17 10:07:25.131 INFO  [main] --> : Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-12-17 10:07:25.414 WARN  [main] --> : No MyBatis mapper was found in '[club.codeqi]' package. Please check your configuration.
+2020-12-17 10:07:26.161 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3047254d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:07:26.195 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:07:26.969 INFO  [main] --> : Tomcat initialized with port(s): 9002 (http)
+2020-12-17 10:07:26.989 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9002"]
+2020-12-17 10:07:26.992 INFO  [main] --> : Starting service [Tomcat]
+2020-12-17 10:07:26.993 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-17 10:07:27.311 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-17 10:07:27.312 INFO  [main] --> : Root WebApplicationContext: initialization completed in 3897 ms
+2020-12-17 10:07:28.297 INFO  [main] --> : 
+
+Using generated security password: 47474882-93ab-454e-bf8d-5498ce8bd0f1
+
+2020-12-17 10:07:28.610 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b306b9f, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d4e405e, org.springframework.security.web.header.HeaderWriterFilter@97d0c06, org.springframework.web.filter.CorsFilter@3936df72, org.springframework.security.web.authentication.logout.LogoutFilter@46349b95, club.codeqi.filter.JwtVerfyFilter@142213d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70972170, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d44a19, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@934b52f, org.springframework.security.web.session.SessionManagementFilter@23f3da8b, org.springframework.security.web.access.ExceptionTranslationFilter@36480b2d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@38ed139b]
+2020-12-17 10:07:29.264 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 10:07:30.217 INFO  [main] --> : Init DruidDataSource
+2020-12-17 10:07:30.407 INFO  [main] --> : {dataSource-1} inited
+2020-12-17 10:07:36.403 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9002"]
+2020-12-17 10:07:36.464 INFO  [main] --> : Tomcat started on port(s): 9002 (http) with context path ''
+2020-12-17 10:07:36.469 INFO  [main] --> : Attempting to connect to: [192.168.174.130:5672]
+2020-12-17 10:07:36.536 INFO  [main] --> : Created new connection: rabbitConnectionFactory#2d2b6960:0/SimpleConnection@40c76f5a [delegate=amqp://admin@192.168.174.130:5672//admin, localPort= 61128]
+2020-12-17 10:07:36.662 INFO  [main] --> : Started SMS_SendApplication in 14.662 seconds (JVM running for 17.172)
+2020-12-17 10:07:36.731 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] --> : 接受到的消息是：{phone=19965412404, code=5678}
+2020-12-17 10:07:37.420 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] --> : 消息发送结果：{"result":1038,"errmsg":"\u9A8C\u8BC1\u7801\u6A21\u677F\u53C2\u6570\u683C\u5F0F\u9519\u8BEF","ext":"","isocode":"CN"}
+2020-12-17 10:10:09.756 INFO  [main] --> : Starting SMS_SendApplication on DESKTOP-0NNS7PI with PID 4180 (E:\ImportantPlan\项目管理\project\SMS_Send\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-17 10:10:09.762 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-17 10:10:09.762 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-17 10:10:11.718 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-17 10:10:11.727 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-17 10:10:11.788 INFO  [main] --> : Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-12-17 10:10:12.053 WARN  [main] --> : No MyBatis mapper was found in '[club.codeqi]' package. Please check your configuration.
+2020-12-17 10:10:12.919 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@37b72ea' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:10:12.989 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:10:13.788 INFO  [main] --> : Tomcat initialized with port(s): 9002 (http)
+2020-12-17 10:10:13.807 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9002"]
+2020-12-17 10:10:13.809 INFO  [main] --> : Starting service [Tomcat]
+2020-12-17 10:10:13.809 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-17 10:10:14.106 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-17 10:10:14.106 INFO  [main] --> : Root WebApplicationContext: initialization completed in 4210 ms
+2020-12-17 10:10:15.103 INFO  [main] --> : 
+
+Using generated security password: 017deed4-2c0b-44b1-8e26-9252db6ee47e
+
+2020-12-17 10:10:15.355 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4dba773d, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b97c4ad, org.springframework.security.web.header.HeaderWriterFilter@53b7ce6, org.springframework.web.filter.CorsFilter@2418ba04, org.springframework.security.web.authentication.logout.LogoutFilter@1e253c9d, club.codeqi.filter.JwtVerfyFilter@1d9bd4da, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@642f9a77, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69fe0ed4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c58255, org.springframework.security.web.session.SessionManagementFilter@72f9f27c, org.springframework.security.web.access.ExceptionTranslationFilter@3cd9aa64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@618ff5c2]
+2020-12-17 10:10:15.972 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 10:10:17.011 INFO  [main] --> : Init DruidDataSource
+2020-12-17 10:10:17.223 INFO  [main] --> : {dataSource-1} inited
+2020-12-17 10:10:21.439 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-0NNS7PI with PID 18740 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-17 10:10:21.445 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-17 10:10:21.446 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-17 10:10:22.570 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9002"]
+2020-12-17 10:10:22.642 INFO  [main] --> : Tomcat started on port(s): 9002 (http) with context path ''
+2020-12-17 10:10:22.649 INFO  [main] --> : Attempting to connect to: [192.168.174.130:5672]
+2020-12-17 10:10:22.731 INFO  [main] --> : Created new connection: rabbitConnectionFactory#5d1b1c2a:0/SimpleConnection@4fbaa7f5 [delegate=amqp://admin@192.168.174.130:5672//admin, localPort= 61556]
+2020-12-17 10:10:22.877 INFO  [main] --> : Started SMS_SendApplication in 14.187 seconds (JVM running for 16.584)
+2020-12-17 10:10:23.363 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-17 10:10:23.370 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-17 10:10:23.514 INFO  [main] --> : Finished Spring Data repository scanning in 73ms. Found 0 Redis repository interfaces.
+2020-12-17 10:10:24.554 INFO  [main] --> : Bean 'redisCache' of type [club.codeqi.config.redisCache$$EnhancerBySpringCGLIB$$1ea9be84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:10:24.733 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4d7aaca2' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:10:24.761 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:10:25.635 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-17 10:10:25.652 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-17 10:10:25.656 INFO  [main] --> : Starting service [Tomcat]
+2020-12-17 10:10:25.657 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-17 10:10:25.985 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-17 10:10:25.986 INFO  [main] --> : Root WebApplicationContext: initialization completed in 4438 ms
+2020-12-17 10:10:26.799 INFO  [main] --> : Init DruidDataSource
+2020-12-17 10:10:27.629 INFO  [main] --> : {dataSource-1} inited
+2020-12-17 10:10:29.828 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-17 10:10:29.849 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-17 10:10:29.863 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-17 10:10:29.908 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-17 10:10:32.155 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-17 10:10:32.160 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-17 10:10:32.165 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-17 10:10:32.182 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-17 10:10:32.301 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-17 10:10:32.306 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-17 10:10:32.311 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-17 10:10:32.336 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-17 10:10:32.941 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e3d7dd, org.springframework.security.web.context.SecurityContextPersistenceFilter@481558ce, org.springframework.security.web.header.HeaderWriterFilter@2091833, org.springframework.web.filter.CorsFilter@46383a78, org.springframework.security.web.authentication.logout.LogoutFilter@7ccfdaef, club.codeqi.filter.JwtLoginFilter@3f63a513, club.codeqi.filter.JwtVerfyFilter@413bef78, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f353a0f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12e12ac9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66383c29, org.springframework.security.web.session.SessionManagementFilter@6411504a, org.springframework.security.web.access.ExceptionTranslationFilter@d88f893, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25f61c2c]
+2020-12-17 10:10:34.365 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 10:10:36.688 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-17 10:10:36.739 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-17 10:10:36.768 INFO  [main] --> : Started project_jwt_authApplication in 16.444 seconds (JVM running for 18.835)
+2020-12-17 10:12:06.807 INFO  [http-nio-9001-exec-1] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-17 10:12:06.807 INFO  [http-nio-9001-exec-1] --> : Initializing Servlet 'dispatcherServlet'
+2020-12-17 10:12:06.836 INFO  [http-nio-9001-exec-1] --> : Completed initialization in 29 ms
+2020-12-17 10:12:07.248 INFO  [http-nio-9001-exec-1] --> : --------------------请求开始--------------------
+2020-12-17 10:12:07.250 INFO  [http-nio-9001-exec-1] --> : 请求路径: http://127.0.0.1:9001/userinfo  GET
+请求内容:{}
+2020-12-17 10:12:07.252 INFO  [http-nio-9001-exec-1] --> : ===============AOP向消息队列发送短信开始===============
+2020-12-17 10:12:07.253 INFO  [http-nio-9001-exec-1] --> : 向消息队列中发送消息：消息队列: hello, 消息内容: SMS{phone='17721330304', code='5678'}
+2020-12-17 10:12:07.275 INFO  [http-nio-9001-exec-1] --> : Attempting to connect to: [192.168.174.130:5672]
+2020-12-17 10:12:07.356 INFO  [http-nio-9001-exec-1] --> : Created new connection: rabbitConnectionFactory#22d9bc14:0/SimpleConnection@df55ad8 [delegate=amqp://admin@192.168.174.130:5672//admin, localPort= 61829]
+2020-12-17 10:12:07.435 INFO  [http-nio-9001-exec-1] --> : ===============AOP向消息队列发送短信结束===============
+2020-12-17 10:12:07.436 INFO  [http-nio-9001-exec-1] --> : 请求结果：{result=200, expire=Thu Dec 17 16:10:46 CST 2020, userinfo=user{uid=5, username='test03', password='', role_id=3, is_lock=0, create_time=Thu Dec 03 13:33:53 CST 2020, userrole=null, permissions=[permission{perid=10, role_id=null, permission_code='userManager', create_time=null, permission_info='用户管理'}, permission{perid=11, role_id=null, permission_code='user', create_time=null, permission_info='普通用户'}]}, token=Bearer eyJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoie1widWlkXCI6NSxcInVzZXJuYW1lXCI6XCJ0ZXN0MDNcIixcInBhc3N3b3JkXCI6XCJcIixcInJvbGVfaWRcIjozLFwiaXNfbG9ja1wiOjAsXCJjcmVhdGVfdGltZVwiOjE2MDY5NzM2MzMwMDAsXCJ1c2Vycm9sZVwiOm51bGwsXCJwZXJtaXNzaW9uc1wiOlt7XCJwZXJpZFwiOjEwLFwicm9sZV9pZFwiOm51bGwsXCJwZXJtaXNzaW9uX2NvZGVcIjpcInVzZXJNYW5hZ2VyXCIsXCJjcmVhdGVfdGltZVwiOm51bGwsXCJwZXJtaXNzaW9uX2luZm9cIjpcIueUqOaIt-euoeeQhlwifSx7XCJwZXJpZFwiOjExLFwicm9sZV9pZFwiOm51bGwsXCJwZXJtaXNzaW9uX2NvZGVcIjpcInVzZXJcIixcImNyZWF0ZV90aW1lXCI6bnVsbCxcInBlcm1pc3Npb25faW5mb1wiOlwi5pmu6YCa55So5oi3XCJ9XX0iLCJqdGkiOiJNall6TWpBMk5UZ3RNVEkzTVMwME4yWTNMV0l4TW1JdE5UVmxZVFEzT0RZeU5UYzAiLCJleHAiOjE2MDgxOTI2NDZ9.VfygFqiJ57Ky8HC1WGHqTLmNG9WZrgvwzR3MSGHxq7WAeKUu3_v0thxeEqeIWXuVlYcOUA645NiggtUom6J508tMrmCpJqL6Yg18Os75q9NEAYdZ0e7TfZ7VWhBTG6QKGILjkdjauBV7hfzI5MpaHEUC-H7XitYCUqVNhAgryoPS9mfvu184K06nUSgl0_Mi6IrhPfZ8jy1YpxyDv2353OTHhV4tklfKwwzCAmEq-hX2Acb_szYNwKWxFUIB-CqhYNrlLfQNkBqteCk4W6Xwe6SYKuA_c5afQKsrXtGs-g5gqPrPhPDgppXnSJOoK8WKNu9aLAdXG0Z5998RpzgYRw}
+2020-12-17 10:12:07.437 INFO  [http-nio-9001-exec-1] --> : --------------------请求结束--------------------
+2020-12-17 10:12:07.570 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] --> : 接受到的消息是：{phone=17721330304, code=5678}
+2020-12-17 10:12:08.452 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] --> : 消息发送结果：{"result":1038,"errmsg":"\u9A8C\u8BC1\u7801\u6A21\u677F\u53C2\u6570\u683C\u5F0F\u9519\u8BEF","ext":"","isocode":"CN"}
+2020-12-17 10:12:57.373 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-0NNS7PI with PID 18072 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-17 10:12:57.380 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-17 10:12:57.381 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-17 10:12:59.222 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-17 10:12:59.229 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-17 10:12:59.299 INFO  [main] --> : Finished Spring Data repository scanning in 39ms. Found 0 Redis repository interfaces.
+2020-12-17 10:13:00.394 INFO  [main] --> : Bean 'redisCache' of type [club.codeqi.config.redisCache$$EnhancerBySpringCGLIB$$1ea9be84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:13:00.617 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@62566842' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:13:00.649 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:13:01.451 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-17 10:13:01.471 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-17 10:13:01.473 INFO  [main] --> : Starting service [Tomcat]
+2020-12-17 10:13:01.473 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-17 10:13:01.821 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-17 10:13:01.822 INFO  [main] --> : Root WebApplicationContext: initialization completed in 4322 ms
+2020-12-17 10:13:02.517 INFO  [main] --> : Init DruidDataSource
+2020-12-17 10:13:03.343 INFO  [main] --> : {dataSource-1} inited
+2020-12-17 10:13:05.298 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-17 10:13:05.317 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-17 10:13:05.330 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-17 10:13:05.357 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-17 10:13:07.398 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-17 10:13:07.402 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-17 10:13:07.407 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-17 10:13:07.422 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-17 10:13:07.529 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-17 10:13:07.532 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-17 10:13:07.537 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-17 10:13:07.551 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-17 10:13:08.060 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@180b3819, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c82b5df, org.springframework.security.web.header.HeaderWriterFilter@ca8ef3a, org.springframework.web.filter.CorsFilter@414f13fc, org.springframework.security.web.authentication.logout.LogoutFilter@1b90fee4, club.codeqi.filter.JwtLoginFilter@733c464f, club.codeqi.filter.JwtVerfyFilter@47272cd3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4214ae8f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a6e4897, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73fbdf68, org.springframework.security.web.session.SessionManagementFilter@511f5b1d, org.springframework.security.web.access.ExceptionTranslationFilter@c7f4457, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1450131a]
+2020-12-17 10:13:09.361 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 10:13:11.751 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-17 10:13:11.809 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-17 10:13:11.837 INFO  [main] --> : Started project_jwt_authApplication in 15.715 seconds (JVM running for 18.208)
+2020-12-17 10:13:23.963 INFO  [http-nio-9001-exec-1] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-17 10:13:23.964 INFO  [http-nio-9001-exec-1] --> : Initializing Servlet 'dispatcherServlet'
+2020-12-17 10:13:23.995 INFO  [http-nio-9001-exec-1] --> : Completed initialization in 31 ms
+2020-12-17 10:13:24.392 INFO  [http-nio-9001-exec-1] --> : --------------------请求开始--------------------
+2020-12-17 10:13:24.394 INFO  [http-nio-9001-exec-1] --> : 请求路径: http://127.0.0.1:9001/userinfo  GET
+请求内容:{}
+2020-12-17 10:13:24.397 INFO  [http-nio-9001-exec-1] --> : ===============AOP向消息队列发送短信开始===============
+2020-12-17 10:13:24.398 INFO  [http-nio-9001-exec-1] --> : 向消息队列中发送消息：消息队列: hello, 消息内容: SMS{phone='17721330304', code='1011'}
+2020-12-17 10:13:24.425 INFO  [http-nio-9001-exec-1] --> : Attempting to connect to: [192.168.174.130:5672]
+2020-12-17 10:13:24.503 INFO  [http-nio-9001-exec-1] --> : Created new connection: rabbitConnectionFactory#234cff57:0/SimpleConnection@5433ac14 [delegate=amqp://admin@192.168.174.130:5672//admin, localPort= 62048]
+2020-12-17 10:13:24.575 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] --> : 接受到的消息是：{phone=17721330304, code=1011}
+2020-12-17 10:13:24.584 INFO  [http-nio-9001-exec-1] --> : ===============AOP向消息队列发送短信结束===============
+2020-12-17 10:13:24.587 INFO  [http-nio-9001-exec-1] --> : 请求结果：{result=200, expire=Thu Dec 17 16:10:46 CST 2020, userinfo=user{uid=5, username='test03', password='', role_id=3, is_lock=0, create_time=Thu Dec 03 13:33:53 CST 2020, userrole=null, permissions=[permission{perid=10, role_id=null, permission_code='userManager', create_time=null, permission_info='用户管理'}, permission{perid=11, role_id=null, permission_code='user', create_time=null, permission_info='普通用户'}]}, token=Bearer eyJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoie1widWlkXCI6NSxcInVzZXJuYW1lXCI6XCJ0ZXN0MDNcIixcInBhc3N3b3JkXCI6XCJcIixcInJvbGVfaWRcIjozLFwiaXNfbG9ja1wiOjAsXCJjcmVhdGVfdGltZVwiOjE2MDY5NzM2MzMwMDAsXCJ1c2Vycm9sZVwiOm51bGwsXCJwZXJtaXNzaW9uc1wiOlt7XCJwZXJpZFwiOjEwLFwicm9sZV9pZFwiOm51bGwsXCJwZXJtaXNzaW9uX2NvZGVcIjpcInVzZXJNYW5hZ2VyXCIsXCJjcmVhdGVfdGltZVwiOm51bGwsXCJwZXJtaXNzaW9uX2luZm9cIjpcIueUqOaIt-euoeeQhlwifSx7XCJwZXJpZFwiOjExLFwicm9sZV9pZFwiOm51bGwsXCJwZXJtaXNzaW9uX2NvZGVcIjpcInVzZXJcIixcImNyZWF0ZV90aW1lXCI6bnVsbCxcInBlcm1pc3Npb25faW5mb1wiOlwi5pmu6YCa55So5oi3XCJ9XX0iLCJqdGkiOiJNall6TWpBMk5UZ3RNVEkzTVMwME4yWTNMV0l4TW1JdE5UVmxZVFEzT0RZeU5UYzAiLCJleHAiOjE2MDgxOTI2NDZ9.VfygFqiJ57Ky8HC1WGHqTLmNG9WZrgvwzR3MSGHxq7WAeKUu3_v0thxeEqeIWXuVlYcOUA645NiggtUom6J508tMrmCpJqL6Yg18Os75q9NEAYdZ0e7TfZ7VWhBTG6QKGILjkdjauBV7hfzI5MpaHEUC-H7XitYCUqVNhAgryoPS9mfvu184K06nUSgl0_Mi6IrhPfZ8jy1YpxyDv2353OTHhV4tklfKwwzCAmEq-hX2Acb_szYNwKWxFUIB-CqhYNrlLfQNkBqteCk4W6Xwe6SYKuA_c5afQKsrXtGs-g5gqPrPhPDgppXnSJOoK8WKNu9aLAdXG0Z5998RpzgYRw}
+2020-12-17 10:13:24.587 INFO  [http-nio-9001-exec-1] --> : --------------------请求结束--------------------
+2020-12-17 10:13:24.713 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] --> : 消息发送结果：{"result":1038,"errmsg":"\u9A8C\u8BC1\u7801\u6A21\u677F\u53C2\u6570\u683C\u5F0F\u9519\u8BEF","ext":"","isocode":"CN"}
+2020-12-17 10:17:46.943 INFO  [main] --> : Starting SMS_SendApplication on DESKTOP-0NNS7PI with PID 18420 (E:\ImportantPlan\项目管理\project\SMS_Send\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-17 10:17:46.950 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-17 10:17:46.952 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-17 10:17:48.878 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-17 10:17:48.885 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-17 10:17:48.961 INFO  [main] --> : Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2020-12-17 10:17:49.298 WARN  [main] --> : No MyBatis mapper was found in '[club.codeqi]' package. Please check your configuration.
+2020-12-17 10:17:50.121 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3162743f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:17:50.157 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:17:50.966 INFO  [main] --> : Tomcat initialized with port(s): 9002 (http)
+2020-12-17 10:17:50.985 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9002"]
+2020-12-17 10:17:50.987 INFO  [main] --> : Starting service [Tomcat]
+2020-12-17 10:17:50.988 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-17 10:17:51.322 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-17 10:17:51.322 INFO  [main] --> : Root WebApplicationContext: initialization completed in 4249 ms
+2020-12-17 10:17:52.242 INFO  [main] --> : 
+
+Using generated security password: 8ebd35ba-d156-47f4-9172-63153b2d497e
+
+2020-12-17 10:17:52.489 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10b1a751, org.springframework.security.web.context.SecurityContextPersistenceFilter@5634d0f4, org.springframework.security.web.header.HeaderWriterFilter@41eb94bc, org.springframework.web.filter.CorsFilter@10f19647, org.springframework.security.web.authentication.logout.LogoutFilter@44f24a20, club.codeqi.filter.JwtVerfyFilter@53cf9c99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d4e405e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@698fee9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b306b9f, org.springframework.security.web.session.SessionManagementFilter@7640a5b1, org.springframework.security.web.access.ExceptionTranslationFilter@517a2b0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@372ca2d6]
+2020-12-17 10:17:53.056 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 10:17:54.031 INFO  [main] --> : Init DruidDataSource
+2020-12-17 10:17:54.224 INFO  [main] --> : {dataSource-1} inited
+2020-12-17 10:18:00.093 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9002"]
+2020-12-17 10:18:00.161 INFO  [main] --> : Tomcat started on port(s): 9002 (http) with context path ''
+2020-12-17 10:18:00.166 INFO  [main] --> : Attempting to connect to: [192.168.174.130:5672]
+2020-12-17 10:18:00.274 INFO  [main] --> : Created new connection: rabbitConnectionFactory#d7bbf12:0/SimpleConnection@2c579202 [delegate=amqp://admin@192.168.174.130:5672//admin, localPort= 62601]
+2020-12-17 10:18:00.394 INFO  [main] --> : Started SMS_SendApplication in 14.749 seconds (JVM running for 17.308)
+2020-12-17 10:18:07.019 INFO  [main] --> : Starting project_jwt_authApplication on DESKTOP-0NNS7PI with PID 1736 (E:\ImportantPlan\项目管理\project\project_jwt_auth\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-17 10:18:07.029 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-17 10:18:07.030 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-17 10:18:09.161 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-17 10:18:09.166 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-17 10:18:09.260 INFO  [main] --> : Finished Spring Data repository scanning in 49ms. Found 0 Redis repository interfaces.
+2020-12-17 10:18:10.364 INFO  [main] --> : Bean 'redisCache' of type [club.codeqi.config.redisCache$$EnhancerBySpringCGLIB$$1ea9be84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:18:10.566 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4d7aaca2' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:18:10.596 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:18:11.452 INFO  [main] --> : Tomcat initialized with port(s): 9001 (http)
+2020-12-17 10:18:11.478 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9001"]
+2020-12-17 10:18:11.479 INFO  [main] --> : Starting service [Tomcat]
+2020-12-17 10:18:11.480 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-17 10:18:11.942 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-17 10:18:11.943 INFO  [main] --> : Root WebApplicationContext: initialization completed in 4754 ms
+2020-12-17 10:18:12.691 INFO  [main] --> : Init DruidDataSource
+2020-12-17 10:18:13.587 INFO  [main] --> : {dataSource-1} inited
+2020-12-17 10:18:15.370 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.user.user".
+2020-12-17 10:18:15.392 WARN  [main] --> : [club.codeqi.bean.user.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-17 10:18:15.407 WARN  [main] --> : [club.codeqi.bean.user.userMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-17 10:18:15.435 WARN  [main] --> : [club.codeqi.bean.user.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-17 10:18:17.440 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.project.project".
+2020-12-17 10:18:17.445 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-17 10:18:17.449 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-17 10:18:17.464 WARN  [main] --> : [club.codeqi.bean.project.projectMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-17 10:18:17.565 WARN  [main] --> : Can not find table primary key in Class: "club.codeqi.bean.role.role".
+2020-12-17 10:18:17.570 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2020-12-17 10:18:17.574 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+2020-12-17 10:18:17.587 WARN  [main] --> : [club.codeqi.bean.role.roleMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2020-12-17 10:18:18.122 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@180b3819, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c82b5df, org.springframework.security.web.header.HeaderWriterFilter@ca8ef3a, org.springframework.web.filter.CorsFilter@414f13fc, org.springframework.security.web.authentication.logout.LogoutFilter@1b90fee4, club.codeqi.filter.JwtLoginFilter@733c464f, club.codeqi.filter.JwtVerfyFilter@47272cd3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4214ae8f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a6e4897, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73fbdf68, org.springframework.security.web.session.SessionManagementFilter@511f5b1d, org.springframework.security.web.access.ExceptionTranslationFilter@c7f4457, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1450131a]
+2020-12-17 10:18:19.401 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 10:18:21.726 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9001"]
+2020-12-17 10:18:21.782 INFO  [main] --> : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-17 10:18:21.809 INFO  [main] --> : Started project_jwt_authApplication in 16.079 seconds (JVM running for 18.68)
+2020-12-17 10:19:26.428 INFO  [main] --> : Starting SMS_SendApplication on DESKTOP-0NNS7PI with PID 13220 (E:\ImportantPlan\项目管理\project\SMS_Send\target\classes started by qiyuan in E:\ImportantPlan\项目管理\project)
+2020-12-17 10:19:26.436 DEBUG [main] --> : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-12-17 10:19:26.437 INFO  [main] --> : No active profile set, falling back to default profiles: default
+2020-12-17 10:19:28.342 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-17 10:19:28.351 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-12-17 10:19:28.422 INFO  [main] --> : Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2020-12-17 10:19:28.733 WARN  [main] --> : No MyBatis mapper was found in '[club.codeqi]' package. Please check your configuration.
+2020-12-17 10:19:29.669 INFO  [main] --> : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7d37f1c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:19:29.704 INFO  [main] --> : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 10:19:30.594 INFO  [main] --> : Tomcat initialized with port(s): 9002 (http)
+2020-12-17 10:19:30.626 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-9002"]
+2020-12-17 10:19:30.628 INFO  [main] --> : Starting service [Tomcat]
+2020-12-17 10:19:30.629 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-17 10:19:30.982 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2020-12-17 10:19:30.983 INFO  [main] --> : Root WebApplicationContext: initialization completed in 4405 ms
+2020-12-17 10:19:32.090 INFO  [main] --> : 
+
+Using generated security password: cb7ee990-c7ea-405e-aee1-e9774bcb003f
+
+2020-12-17 10:19:32.338 INFO  [main] --> : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c58255, org.springframework.security.web.context.SecurityContextPersistenceFilter@642f9a77, org.springframework.security.web.header.HeaderWriterFilter@27d33393, org.springframework.web.filter.CorsFilter@2ab0702e, org.springframework.security.web.authentication.logout.LogoutFilter@18b8d173, club.codeqi.filter.JwtVerfyFilter@eac3a26, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5634d0f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6caf7803, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10b1a751, org.springframework.security.web.session.SessionManagementFilter@762637be, org.springframework.security.web.access.ExceptionTranslationFilter@443effcb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f84acf7]
+2020-12-17 10:19:32.936 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 10:19:33.975 INFO  [main] --> : Init DruidDataSource
+2020-12-17 10:19:34.179 INFO  [main] --> : {dataSource-1} inited
+2020-12-17 10:19:39.807 INFO  [main] --> : Starting ProtocolHandler ["http-nio-9002"]
+2020-12-17 10:19:39.857 INFO  [main] --> : Tomcat started on port(s): 9002 (http) with context path ''
+2020-12-17 10:19:39.862 INFO  [main] --> : Attempting to connect to: [192.168.174.130:5672]
+2020-12-17 10:19:39.925 INFO  [main] --> : Created new connection: rabbitConnectionFactory#36790bec:0/SimpleConnection@ad0bb4e [delegate=amqp://admin@192.168.174.130:5672//admin, localPort= 62885]
+2020-12-17 10:19:40.051 INFO  [main] --> : Started SMS_SendApplication in 14.793 seconds (JVM running for 17.165)
+2020-12-17 10:19:55.435 INFO  [http-nio-9001-exec-1] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-17 10:19:55.436 INFO  [http-nio-9001-exec-1] --> : Initializing Servlet 'dispatcherServlet'
+2020-12-17 10:19:55.468 INFO  [http-nio-9001-exec-1] --> : Completed initialization in 31 ms
+2020-12-17 10:19:55.869 INFO  [http-nio-9001-exec-1] --> : --------------------请求开始--------------------
+2020-12-17 10:19:55.871 INFO  [http-nio-9001-exec-1] --> : 请求路径: http://127.0.0.1:9001/userinfo  GET
+请求内容:{}
+2020-12-17 10:19:55.873 INFO  [http-nio-9001-exec-1] --> : ===============AOP向消息队列发送短信开始===============
+2020-12-17 10:19:55.874 INFO  [http-nio-9001-exec-1] --> : 向消息队列中发送消息：消息队列: hello, 消息内容: SMS{phone='17721330304', code='1011'}
+2020-12-17 10:19:55.899 INFO  [http-nio-9001-exec-1] --> : Attempting to connect to: [192.168.174.130:5672]
+2020-12-17 10:19:55.977 INFO  [http-nio-9001-exec-1] --> : Created new connection: rabbitConnectionFactory#234cff57:0/SimpleConnection@394f7b43 [delegate=amqp://admin@192.168.174.130:5672//admin, localPort= 62916]
+2020-12-17 10:19:56.055 INFO  [http-nio-9001-exec-1] --> : ===============AOP向消息队列发送短信结束===============
+2020-12-17 10:19:56.057 INFO  [http-nio-9001-exec-1] --> : 请求结果：{result=200, expire=Thu Dec 17 16:10:46 CST 2020, userinfo=user{uid=5, username='test03', password='', role_id=3, is_lock=0, create_time=Thu Dec 03 13:33:53 CST 2020, userrole=null, permissions=[permission{perid=10, role_id=null, permission_code='userManager', create_time=null, permission_info='用户管理'}, permission{perid=11, role_id=null, permission_code='user', create_time=null, permission_info='普通用户'}]}, token=Bearer eyJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoie1widWlkXCI6NSxcInVzZXJuYW1lXCI6XCJ0ZXN0MDNcIixcInBhc3N3b3JkXCI6XCJcIixcInJvbGVfaWRcIjozLFwiaXNfbG9ja1wiOjAsXCJjcmVhdGVfdGltZVwiOjE2MDY5NzM2MzMwMDAsXCJ1c2Vycm9sZVwiOm51bGwsXCJwZXJtaXNzaW9uc1wiOlt7XCJwZXJpZFwiOjEwLFwicm9sZV9pZFwiOm51bGwsXCJwZXJtaXNzaW9uX2NvZGVcIjpcInVzZXJNYW5hZ2VyXCIsXCJjcmVhdGVfdGltZVwiOm51bGwsXCJwZXJtaXNzaW9uX2luZm9cIjpcIueUqOaIt-euoeeQhlwifSx7XCJwZXJpZFwiOjExLFwicm9sZV9pZFwiOm51bGwsXCJwZXJtaXNzaW9uX2NvZGVcIjpcInVzZXJcIixcImNyZWF0ZV90aW1lXCI6bnVsbCxcInBlcm1pc3Npb25faW5mb1wiOlwi5pmu6YCa55So5oi3XCJ9XX0iLCJqdGkiOiJNall6TWpBMk5UZ3RNVEkzTVMwME4yWTNMV0l4TW1JdE5UVmxZVFEzT0RZeU5UYzAiLCJleHAiOjE2MDgxOTI2NDZ9.VfygFqiJ57Ky8HC1WGHqTLmNG9WZrgvwzR3MSGHxq7WAeKUu3_v0thxeEqeIWXuVlYcOUA645NiggtUom6J508tMrmCpJqL6Yg18Os75q9NEAYdZ0e7TfZ7VWhBTG6QKGILjkdjauBV7hfzI5MpaHEUC-H7XitYCUqVNhAgryoPS9mfvu184K06nUSgl0_Mi6IrhPfZ8jy1YpxyDv2353OTHhV4tklfKwwzCAmEq-hX2Acb_szYNwKWxFUIB-CqhYNrlLfQNkBqteCk4W6Xwe6SYKuA_c5afQKsrXtGs-g5gqPrPhPDgppXnSJOoK8WKNu9aLAdXG0Z5998RpzgYRw}
+2020-12-17 10:19:56.057 INFO  [http-nio-9001-exec-1] --> : --------------------请求结束--------------------
+2020-12-17 10:19:56.164 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] --> : 接受到的消息是：{phone=17721330304, code=1011}
+2020-12-17 10:19:58.221 INFO  [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] --> : 消息发送结果：{"result":1038,"errmsg":"\u9A8C\u8BC1\u7801\u6A21\u677F\u53C2\u6570\u683C\u5F0F\u9519\u8BEF","ext":"","isocode":"CN"}

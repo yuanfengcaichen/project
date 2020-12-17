@@ -1,5 +1,6 @@
 package club.codeqi.Aspect.user;
 
+import club.codeqi.utils.JsonUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
@@ -28,10 +29,10 @@ public class JwtLoginAspect {
     public Object aroundSendSMS(ProceedingJoinPoint pjp) throws Throwable {
         SMS sms = new SMS();
         sms.setPhone("17721330304");
-        sms.setCode("1216");
+        sms.setCode("1011");
         LOGGER.info("===============AOP向消息队列发送短信开始===============");
         LOGGER.info("向消息队列中发送消息：消息队列: "+"hello"+", 消息内容: "+sms.toString());
-        amqpTemplate.convertAndSend("hello",sms.toString());
+        amqpTemplate.convertAndSend("hello", JsonUtils.toString(sms));
         //1.开始
         try {
             // 2、执行时

@@ -14,7 +14,6 @@ import java.io.Serializable;
 public class SMS implements Serializable {
     private String phone;
     private String code;
-    public static final Logger LOGGER = LoggerFactory.getLogger("SMS发送记录");
     public String getPhone() {
         return phone;
     }
@@ -37,12 +36,11 @@ public class SMS implements Serializable {
             int appid = 1400336700;
             String appkey = "8993880b44bfcc2b805606db6e7cc5e2";
             String[] phoneNumbers = new String[]{this.phone};
-            int templateId = 559969;
+            int templateId = 813655;
             String smsSign = "祁远学习历程";
             String[] params = new String[]{this.code};
             SmsSingleSender ssender = new SmsSingleSender(appid, appkey);
             SmsSingleSenderResult res = ssender.sendWithParam("86", phoneNumbers[0], templateId, params, smsSign, "", "");
-            LOGGER.info(JsonUtils.toString(res));
             result = res;
         } catch (HTTPException var13) {
             var13.printStackTrace();
