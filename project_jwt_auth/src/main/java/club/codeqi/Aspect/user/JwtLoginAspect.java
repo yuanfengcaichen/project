@@ -11,8 +11,8 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Aspect
-@Component
+//@Aspect
+//@Component
 public class JwtLoginAspect {
 
     public static final Logger LOGGER = LoggerFactory.getLogger("Token发放记录");
@@ -32,7 +32,7 @@ public class JwtLoginAspect {
         sms.setPhone("17721330304");
         sms.setCode("1011");
         LOGGER.info("===============AOP向消息队列发送短信开始===============");
-        LOGGER.info("向消息队列中发送消息：消息队列: "+"hello"+", 消息内容: "+sms.toString());
+        LOGGER.info("向消息队列中发送消息：消息队列: "+RabbitConfig.FANOUT_EXCHANGE+", 消息内容: "+sms.toString());
         amqpTemplate.convertAndSend(RabbitConfig.FANOUT_EXCHANGE, "", JsonUtils.toString(sms));
         //1.开始
         try {

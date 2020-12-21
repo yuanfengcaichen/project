@@ -74,6 +74,13 @@
             <artifactId>qcloudsms</artifactId>
             <version>1.0.6</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.tencentcloudapi/tencentcloud-sdk-java -->
+        <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java</artifactId>
+            <version>3.1.182</version>
+        </dependency>
+
         <!--解决短信发送时json依赖冲突问题-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
